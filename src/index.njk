@@ -3,55 +3,70 @@ title: Novva Otorrino - Curitiba
 layout: "base.njk"
 ---
 
-<section class="flex flex-col h-[70vh] relative">
-
+<section class="flex flex-col h-[70vh] relative md:h-[80vh] ">
   <picture>
     <source media="(min-width:650px)" srcset="./img/home-banner.jpg">
     <source media="(max-width:649px)" srcset="./img/banner-mobile-2.jpg">
-    <img class="w-full h-[70vh]" src="./img/home-banner.jpg" alt="" />
+    <img class="w-full h-[70vh] md:h-[80vh]" src="./img/home-banner.jpg" alt="" />
   </picture>
 
-
   <div
-    class="h-[70vh] justify-between flex flex-col w-full  md:mt-0 items-center md:items-start absolute h-[50vh] align-middle md:justify-end md:justify-center md:w-[513px] md:h-[80vh] md:left-[10%] gap-8">
-    <img class="mt-6 w-[200px] mx-auto md:w-[307px] md:mx-0 " src="./img/svg/novva-logo.svg" alt="">
+    class="h-[70vh] justify-between flex flex-col w-full  md:mt-0 items-center md:items-start absolute align-middle md:justify-end md:justify-center md:w-[513px] md:h-[80vh] md:left-[10%] gap-0">
+    <img class="mt-6 w-[200px] mx-auto md:w-[287px] md:mx-0 md:mb-12 " src="./img/svg/novva-logo.svg" alt="">
 
-    <h2
-      class="-mt-32 md:mt-0 text-3xl text-bege text-center font-medium md:text-left  md:text-5xl font-bold font-serif  ">
+    <h2 class="md:mt-0 px-8 text-2xl text-3xl text-bege text-center md:text-left  md:text-5xl font-bold font-serif  ">
       Promovendo saúde <br /> e qualidade de vida</h2>
     </p>
 
-    <div class="flex flex-col gap-4">
-      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
-        target="_blank"
-        class="md:mt-0 w-72 border rounded-full  tracking-widest	 border-black bg-black px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
-        AGENDE UMA CONSULTA
-      </a>
+    <div class="flex flex-col md:gap-4 px-8 md:px-0 pb-4 md:pb-0 ">
+      <h2 class="text-2xl md:text-3xl font-bo text-bege">Faça seu agendamento online</h2>
+      <div class="flex flex-col md:flex-row gap-4">
+        <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+          target="_blank"
+          class=" flex align-middle mt-4 md:mt-0 w-46 md:mb-8 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+          Agende por Telefone >
+        </a>
 
-      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
-        target="_blank"
-        class=" flex align-middle mt-4 md:mt-0 w-72 mb-8 border rounded-full  tracking-widest	 border-black bg-black px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
-        <svg class="mr-4 mt-[2px] ml-6" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
-          fill="none">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M13.1241 11.578C12.8995 11.4683 11.7985 10.9393 11.5935 10.8656C11.3885 10.7927 11.2393 10.7566 11.0894 10.9761C10.9401 11.1942 10.5113 11.6878 10.381 11.8337C10.2498 11.9803 10.1195 11.998 9.89564 11.8889C9.67182 11.7784 8.94986 11.5478 8.09452 10.8023C7.42908 10.2217 6.97918 9.50488 6.8488 9.28534C6.71843 9.06653 6.83448 8.94792 6.94677 8.83888C7.04775 8.7409 7.17059 8.58324 7.28288 8.45578C7.39517 8.32759 7.43209 8.23624 7.5067 8.08963C7.58206 7.94376 7.54438 7.81631 7.48786 7.70654C7.43209 7.59676 6.98445 6.51894 6.79756 6.08059C6.61594 5.65402 6.4313 5.71222 6.29414 5.70486C6.16302 5.69896 6.0138 5.69749 5.86459 5.69749C5.71537 5.69749 5.47271 5.75201 5.26773 5.97155C5.06199 6.19036 4.48397 6.72006 4.48397 7.79789C4.48397 8.87498 5.28582 9.91597 5.3981 10.0626C5.51039 10.2085 6.97691 12.4201 9.22342 13.3683C9.75849 13.5937 10.1752 13.7285 10.5 13.8287C11.0366 13.996 11.5249 13.9724 11.9108 13.9156C12.3404 13.853 13.2356 13.3859 13.4225 12.8747C13.6087 12.3634 13.6087 11.925 13.5529 11.8337C13.4971 11.7423 13.3479 11.6878 13.1234 11.578H13.1241ZM9.03804 17.032H9.03502C7.7007 17.0322 6.39089 16.6816 5.24286 16.0168L4.97156 15.8591L2.15155 16.5826L2.90441 13.895L2.72731 13.6195C1.98134 12.4587 1.58657 11.1152 1.58861 9.74432C1.59012 5.72917 4.93162 2.46253 9.04105 2.46253C11.0306 2.46253 12.901 3.22136 14.3073 4.59756C15.0009 5.27283 15.5506 6.07584 15.9247 6.96016C16.2988 7.84447 16.4898 8.79253 16.4867 9.74947C16.4852 13.7646 13.1437 17.032 9.03804 17.032ZM15.3774 3.55215C14.5471 2.73506 13.5591 2.0872 12.4708 1.64609C11.3825 1.20499 10.2154 0.979419 9.03728 0.982452C4.09813 0.982452 0.0768681 4.91288 0.0753609 9.74358C0.0730722 11.2809 0.485607 12.7917 1.27134 14.1234L0 18.6638L4.75075 17.4453C6.06495 18.1453 7.53767 18.512 9.03427 18.5121H9.03804C13.9772 18.5121 17.9984 14.5816 18 9.75021C18.0036 8.59891 17.7737 7.45833 17.3235 6.39445C16.8734 5.33057 16.2119 4.36451 15.3774 3.55215Z"
-            fill="#ffffff" />
-        </svg>
-        (41) 99115-1500
-      </a>
+        <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+          target="_blank"
+          class=" flex align-middle md:mt-0 w-46 md:mb-8 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+          Agende por WhatsApp >
+        </a>
+      </div>
     </div>
+  </div>
+</section>
 
-
-
+<section class="grid grid-cols-2 px-2 md:flex bg-bege justify-center items-center py-4 gap-6">
+  <div class="border-r-2 pr-6 py-2 border-bege2">
+    <h4 class="text-bege3">Cirurgia facil</h4>
+  </div>
+  <div class="md:border-r-2 pr-6 py-2 md:border-bege2">
+    <h4 class="text-bege3">Otorrinolaringologia</h4>
+  </div>
+  <div class="border-r-2 pr-6 py-2 border-bege2">
+    <h4 class="text-bege3">Audiometria</h4>
+  </div>
+  <div class="md:border-r-2 pr-6 py-2 md:border-bege2">
+    <h4 class="text-bege3">Alergologia <br />
+      e imunologia</h4>
+  </div>
+  <div class="border-r-2 pr-6 py-2 border-bege2">
+    <h4 class="text-bege3">Dermatologia</h4>
+  </div>
+  <div class="md:border-r-2 pr-6 py-2 md:border-bege2">
+    <h4 class="text-bege3">Gastroenterologia</h4>
   </div>
 </section>
 
 <section class="flex flex-col px-4 md:flex-row items-center justify-center mx-auto h-[350px]">
-  <div class="flex flex-col w-[375px] md:w-[489px]">
-    <h2 class="text-xl">QUEM SOMOS</h2>
-    <p class="text-3xl">Diagnósticos de alto padrão </br> e excelência no resultado.</p>
+  <div class="flex flex-col w-[90vw] md:w-[489px]">
+    <h2 class="text-center md:text-left  text-xl">QUEM SOMOS</h2>
+    <p class="text-center md:text-left text-xl  md:text-3xl">Diagnósticos de alto padrão </br> e excelência no
+      resultado.</p>
   </div>
-  <p class="flex flex-col w-[375px] md:w-[489px] md:max-w-[489px] mt-5">Nosso foco é proporcionar um atendimento de
+  <p class="flex flex-col w-[90vw] md:w-[489px] md:max-w-[489px] mt-5 text-center md:text-left">Nosso foco é
+    proporcionar um atendimento de
     excelência, com
     profissionais
     do
@@ -63,201 +78,278 @@ layout: "base.njk"
   </div>
 </section>
 
-<span class="w-[80vw] block border-b-[1px] m-auto border-blue-theme"></span>
+<span class="w-[68vw] block border-b-[1px] m-auto border-blue-theme"></span>
 
+<section class="flex flex-col px-4 items-center justify-center mx-auto h-[350px] text-center">
+  <h2 class="text-xl text-bege3">EQUIPE</h2>
+  <p class=" text-2xl">Compromisso em cuidar da saúde <br /> do paciente de maneira integral</p>
+  <p class="text-center mt-4">Nossa equipe prestará atendimento <br /> sempre com olhar
+    atencioso
+    e
+    cuidadoso, <br />
+    zelando pelo bem-estar de todos.</p>
+</section>
 
-<div class="swiper-container relative mt-14 flex  w-full flex-1 flex-col  overflow-hidden pb-8">
-  <div class="swiper flex w-full flex-col md:flex-row ">
-    <div class="swiper-wrapper">
+<section class="grid md:grid-cols-3 place-items-center mt-60 gap-y-56 md:gap-y-80">
+  <div class="w-[90vw] md:w-[431px] ">
+    <div class="px-8 text-center bg-bege h-full md:h-[886px] rounded-3xl flex flex-col place-items-center">
+      <img class="w-[70%] -mt-[70%]" src="./img/dr-luciano.png" alt="">
 
-      <div class="swiper-slide h-[80vh] bg-transparent  space-y-1 overflow-hidden">
-        <div class="flex flex-col-reverse md:flex-row">
-          <div class="flex flex-col justify-center pl-[5%] md:pl-[10%] bg-cinza w-full md:w-[60vw] rounded-r-3xl py-4 ">
-            <h3 class="py-8 text-3xl text-bege3 font-bold">Otorrinolaringologista/ Cirurgia da Face</h3>
-            <h2 class="text-2xl font-bold">Dr. Luciano Campelo Prestes</h2>
-            <h4 class="pb-4 ">Otorrinolaringologista | Cirurgia da Face | Rinoplastia Ultrassônica</h4>
-            <p class="md:w-4/6 text-lg">Graduado em Medicina pela Universidade Federal do Paraná, fez residência
-              médica, obtendo
-              o
-              título de especialista pela mesma instituição logo na sequência. Alguns poucos anos depois, foi titulado
-              como Mestre em Cirurgia pelo Hospital de Clínicas - UFPR.
+      <h4 class="mt-5 text-bege3 font-bold text-3xl">Plástica Facial</h4>
+      <h2 class="mt-8 font-bold text-2xl">Dr. Luciano Campelo Prestes</h2>
+      <p class="text-xs mb-8">Otorrinolaringologista | Cirurgia da Face Rinoplastia Ultrassônica</p>
+      <p class="text-lg mb-8">Diretor técnico da Novva Otorrino, o Dr. Luciano Prestes é médico otorrinolaringologista e
+        mestre em cirurgia
+        formado pela Universidade Federal do Paraná (UFPR), com aprofundamento em cirurgia plástica facial avançada pela
+        Universidade de Medellin.</p>
 
-              Chefiou um Pronto-Atendimento de um hospital de grande demanda na sua especialidade, por 11 anos,
-              comandando e auxiliando na formação de mais de cem médicos que passaram sob sua supervisão. Atua dentro de
-              toda a especialidade de otorrinolaringologia e cirurgia da face, especialmente na Rinoplastia.</p>
+      <p class="text-lg mb-8">Oferece atendimentos em otorrinolaringologia geral com foco em cirurgias da face, como
+        rinoplastia,
+        blefaroplastia, otoplastia e outras. Possui mais de 16 anos de experiência, sendo 11 anos chefiando o pronto
+        atendimento de um grande hospital em sua especialidade, auxiliando na formação e comandando mais de 100 médicos.
+      </p>
 
-            <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
-              target="_blank"
-              class="w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-black bg-black px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
-              AGENDE UMA CONSULTA
-            </a>
-          </div>
-          <img class="h-[60vh] w-[75vw] md:w-auto md:ml-[-6rem] rounded-r-2xl md:h-[45vh] my-auto"
-            src="./img/dr-luciano.png" alt="">
-        </div>
-      </div>
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-0 w-[85%] mb-2 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por Telefone >
+      </a>
 
-      <div class="swiper-slide h-[80vh] bg-transparent  space-y-1">
-        <div class="flex flex-col-reverse md:flex-row ">
-          <div class="flex flex-col justify-center pl-[5%] md:pl-[10%] bg-cinza w-full md:w-[60vw] rounded-r-3xl py-4 ">
-            <h3 class="py-8 text-3xl text-bege3 font-bold">Alergia e Imunologia</h3>
-            <h2 class="text-2xl font-bold">Dra. Mariana Rosa</h2>
-            <h4 class="pb-4 ">Diretora de Alergia e Imunologia</h4>
-            <p class="md:w-4/6 text-lg">A Dra. Mariana Rosa é diretora de alergologia e imunologia da Novva Otorrino,
-              médica
-              alergista e imun ologista pela Universidade Federal do Rio de Janeiro (UFRJ).
-              <br /><br />
-              É a médica responsável pelos atendimentos de casos de dermatite, urticária, rinite, asma e outros
-              relacionados à sua especialidade. Integra a nossa equipe reafirmando o nosso compromisso em cuidar da
-              saúde do paciente de maneira integral, prezando pela qualidade de vida e bem-estar.
-
-            </p>
-
-            <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
-              target="_blank"
-              class="w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-black bg-black px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
-              AGENDE UMA CONSULTA
-            </a>
-          </div>
-          <img class="h-[60vh] w-[75vw] md:w-auto md:ml-[-6rem] rounded-r-2xl md:h-[45vh] my-auto "
-            src="./img/mariana-rosa.png" alt="">
-        </div>
-      </div>
-
-      <div class="swiper-slide h-[80vh] bg-transparent  space-y-1">
-        <div class="flex flex-col-reverse md:flex-row ">
-          <div class="flex flex-col justify-center pl-[5%] md:pl-[10%] bg-cinza w-full md:w-[60vw] rounded-r-3xl py-4">
-            <h3 class="py-8 text-3xl text-bege3 font-bold">Otologia</h3>
-            <h2 class="text-2xl font-bold">Dra. Vanessa Mazanek Santos</h2>
-            <h4 class="pb-4 "> Otorrinolaringologista | Otologia</h4>
-            <p class="md:w-4/6 text-lg">A Dra. Vanessa Mazanek é médica pela Universidade Federal do Paraná (UFPR),
-              especializada
-              em otorrinolaringologia e otologia e estudou no Instituto Portmann em Bordeaux, na França. Mestranda em
-              clínica cirúrgica pelo HC/UFPR, estuda profundamente o tratamento das doenças do ouvido e é cirurgiã
-              especialista em implante coclear, acreditada pela Cochlear. Com 9 anos de experiência, excelência no
-              atendimento e conhecimento profundo, é responsável pelo atendimento da saúde auditiva e casos de surdez.
-            </p>
-
-            <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
-              target="_blank"
-              class="w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-black bg-black px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
-              AGENDE UMA CONSULTA
-            </a>
-          </div>
-          <img class="h-[60vh] w-[75vw] md:w-auto md:ml-[-6rem] rounded-r-2xl md:h-[45vh] my-auto"
-            src="./img/dra-vanessa.png" alt="">
-        </div>
-      </div>
-
-      <div class="swiper-slide h-[80vh] bg-transparent  space-y-1    ">
-        <div class="flex flex-col-reverse md:flex-row ">
-          <div class="flex flex-col justify-center pl-[5%] md:pl-[10%] bg-cinza w-full md:w-[60vw] rounded-r-3xl py-4">
-            <h3 class="py-8 text-3xl text-bege3 font-bold">Otoneurologia</h3>
-            <h2 class="text-2xl font-bold">Dr. Lucas Resende Lucinda Mangia</h2>
-            <h4 class="pb-4 ">Otoneurologia</h4>
-            <p class="md:w-4/6 text-lg">O Dr. Lucas Mangia é médico otorrinolaringologista pela Universidade Federal do
-              Paraná
-              (UFPR), onde hoje é professor efetivo da faculdade de Medicina. Especializado em otoneurologia, área da
-              medicina responsável pela saúde do ouvido interno (audição e labirinto), foi Fellowship no Centre
-              Hospitalier Univ ersitaire de Bordeaux na França e concluiu Observership na área, no John Hopkins, nos
-              Estados Unidos. É Membro da Academia Brasileira de Otoneurologia (ABON), preceptor dos ambulatórios de
-              otoneurologia do Hospital de Clínicas da UFPR e pesquisador nessa mesma subespecialidade. É o médico
-              responsável pelos atendimentos relacionados à audição e ao labirinto, cuidando da saúde e bem-estar de
-              todos com excelência. 
-            </p>
-
-            <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
-              target="_blank"
-              class="w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-black bg-black px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
-              AGENDE UMA CONSULTA
-            </a>
-          </div>
-          <img class="h-[60vh] w-[75vw] md:w-auto md:ml-[-6rem] rounded-r-2xl md:h-[45vh] my-auto"
-            src="./img/dr-lucas.png" alt="">
-        </div>
-      </div>
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-0 w-[85%] mb-8 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por WhatsApp >
+      </a>
     </div>
   </div>
 
-  <div class="absolute top-10 right-4 md:right-10 flex">
+  <div class="w-[90vw]  md:w-[431px] ">
+    <div class="px-8 text-center bg-bege h-full md:h-[886px] rounded-3xl flex flex-col place-items-center">
+      <img class="w-[70%] -mt-[70%]" src="./img/dra-vanessa.png" alt="">
 
-    <svg width="31" height="18 " viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-      class="group cursor-pointer swiper-button-prev">
-      <path
-        d="M-1.09968e-06 8.76132C-1.07881e-06 8.52264 0.0974931 8.29373 0.271033 8.12496C0.444575 7.95618 0.679948 7.86137 0.925372 7.86137L27.8403 8.10005L21.0908 1.53717C21.0049 1.45355 20.9367 1.35429 20.8901 1.24504C20.8436 1.13579 20.8197 1.0187 20.8197 0.900453C20.8197 0.782203 20.8436 0.665113 20.8901 0.555863C20.9367 0.446616 21.0049 0.347352 21.0908 0.263738C21.1768 0.180123 21.2789 0.113797 21.3912 0.0685455C21.5036 0.0232936 21.624 1.08767e-06 21.7455 1.0983e-06C21.8671 1.10893e-06 21.9875 0.0232937 22.0999 0.0685455C22.2122 0.113797 22.3143 0.180124 22.4002 0.263738L30.7286 8.36329C30.8146 8.44687 30.8829 8.54612 30.9295 8.65537C30.976 8.76463 31 8.88173 31 9C31 9.11827 30.976 9.23538 30.9295 9.34463C30.8829 9.45388 30.8146 9.55314 30.7286 9.63672L22.4002 17.7363C22.2266 17.9051 21.9911 18 21.7455 18C21.5 18 21.2645 17.9051 21.0908 17.7363C20.9172 17.5674 20.8197 17.3384 20.8197 17.0995C20.8197 16.8607 20.9172 16.6317 21.0908 16.4628L27.8403 9.89995L0.925372 9.66127C0.679948 9.66127 0.444575 9.56645 0.271033 9.39768C0.097493 9.2289 -1.12054e-06 9 -1.09968e-06 8.76132Z"
-        fill="#7A7169" />
-    </svg>
+      <h4 class="mt-5 text-bege3 font-bold text-3xl">Otologia</h4>
+      <h2 class="mt-8 font-bold text-2xl">Dra. Vanessa Mazanek Santos</h2>
+      <p class="text-xs mb-8">Otorrinolaringologista | Otologia</p>
+      <p class="text-lg mb-8">A Dra. Vanessa Mazanek é médica pela Universidade Federal do Paraná (UFPR), especializada
+        em otorrinolaringologia e otologia e estudou no Instituto Portmann em Bordeaux, na França. Mestranda em clínica
+        cirúrgica pelo HC/UFPR, estuda profundamente o tratamento das doenças do ouvido e é cirurgiã especialista em
+        implante coclear, acreditada pela Cochlear. Com 9 anos de experiência, excelência no atendimento e conhecimento
+        profundo, é responsável pelo atendimento da saúde auditiva e casos de surdez.</p>
 
-    <svg width="31" height="18" viewBox="0 0 31 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-      class="group cursor-pointer swiper-button-next">
-      <path
-        d="M-1.09968e-06 8.76132C-1.07881e-06 8.52264 0.0974931 8.29373 0.271033 8.12496C0.444575 7.95618 0.679948 7.86137 0.925372 7.86137L27.8403 8.10005L21.0908 1.53717C21.0049 1.45355 20.9367 1.35429 20.8901 1.24504C20.8436 1.13579 20.8197 1.0187 20.8197 0.900453C20.8197 0.782203 20.8436 0.665113 20.8901 0.555863C20.9367 0.446616 21.0049 0.347352 21.0908 0.263738C21.1768 0.180123 21.2789 0.113797 21.3912 0.0685455C21.5036 0.0232936 21.624 1.08767e-06 21.7455 1.0983e-06C21.8671 1.10893e-06 21.9875 0.0232937 22.0999 0.0685455C22.2122 0.113797 22.3143 0.180124 22.4002 0.263738L30.7286 8.36329C30.8146 8.44687 30.8829 8.54612 30.9295 8.65537C30.976 8.76463 31 8.88173 31 9C31 9.11827 30.976 9.23538 30.9295 9.34463C30.8829 9.45388 30.8146 9.55314 30.7286 9.63672L22.4002 17.7363C22.2266 17.9051 21.9911 18 21.7455 18C21.5 18 21.2645 17.9051 21.0908 17.7363C20.9172 17.5674 20.8197 17.3384 20.8197 17.0995C20.8197 16.8607 20.9172 16.6317 21.0908 16.4628L27.8403 9.89995L0.925372 9.66127C0.679948 9.66127 0.444575 9.56645 0.271033 9.39768C0.097493 9.2289 -1.12054e-06 9 -1.09968e-06 8.76132Z"
-        fill="#7A7169" />
-    </svg>
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-auto w-[85%] mb-2 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por Telefone >
+      </a>
+
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-0 w-[85%] mb-8 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por WhatsApp >
+      </a>
+    </div>
   </div>
 
-  <div class="swiper-pagination"></div>
-</div>
+  <div class="w-[90vw]  md:w-[431px]">
+    <div class="px-8 text-center bg-bege h-full md:h-[886px] rounded-3xl flex flex-col place-items-center">
+      <img class="w-[70%] -mt-[70%]" src="./img/dr-lucas.png" alt="">
 
-<section class="flex flex-col px-4 md:flex-row items-center justify-center mx-auto h-[350px]">
-  <div class="flex flex-col md:w-[489px]">
-    <h2 class="text-xl">EQUIPE</h2>
-    <p class=" text-2xl">Compromisso em cuidar da saúde <br /> do paciente de maneira integral</p>
+      <h4 class="mt-5 text-bege3 font-bold text-3xl">Otoneurologia</h4>
+      <h2 class="mt-8 font-bold text-2xl">Lucas Resende Lucinda Mangia</h2>
+      <p class="text-xs mb-8">Otoneurologia</p>
+      <p class="text-lg mb-8">Diretor técnico da Novva Otorrino, o Dr. Luciano Prestes é médico otorrinolaringologista e
+        mestre em cirurgia formado pela Universidade Federal do Paraná (UFPR), com aprofundamento em cirurgia plástica
+        facial avançada pela Universidade de Medellin.</p>
+
+      <p class="text-lg mb-8">Oferece atendimentos em otorrinolaringologia geral com foco em cirurgias da face, como
+        rinoplastia, blefaroplastia, otoplastia e outras. Possui mais de 16 anos de experiência, sendo 11 anos chefiando
+        o pronto atendimento de um grande hospital em sua especialidade, auxiliando na formação e comandando mais de 100
+        médicos.
+      </p>
+
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-auto w-[85%] mb-2 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por Telefone >
+      </a>
+
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-0 w-[85%] mb-8 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por WhatsApp >
+      </a>
+    </div>
   </div>
-  <p class="text-center md:text-left md:max-w-[489px] mt-5">Nossa equipe prestará atendimento sempre com olhar atencioso
-    e
-    cuidadoso,
-    zelando pelo bem-estar de todos.</p>
-  <div>
 
+  <div class="w-[90vw]  md:w-[431px] ">
+    <div class="px-8 text-center bg-bege h-full md:h-[836px] rounded-3xl flex flex-col place-items-center">
+      <img class="w-[70%] -mt-[70%]" src="./img/mariana-rosa.png" alt="">
+
+      <h4 class="mt-5 text-bege3 font-bold text-3xl">Alergia e Imunologia</h4>
+      <h2 class="mt-8 font-bold text-2xl">Dra. Mariana Rosa</h2>
+      <p class="text-xs mb-8">Diretora de Alergia e Imunologia</p>
+      <p class="text-lg mb-8">A Dra. Mariana Rosa é diretora de alergologia e imunologia da Novva Otorrino, médica
+        alergista e imunologista pela Universidade Federal do Rio de Janeiro (UFRJ)..</p>
+
+      <p class="text-lg mb-8">É a médica responsável pelos atendimentos de casos de dermatite, urticária, rinite, asma e
+        outros relacionados à sua especialidade. Integra a nossa equipe reafirmando o nosso compromisso em cuidar da
+        saúde do paciente de maneira integral, prezando pela qualidade de vida e bem-estar.
+      </p>
+
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-auto w-[85%] mb-2 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por Telefone >
+      </a>
+
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-0 w-[85%] mb-8 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por WhatsApp >
+      </a>
+    </div>
+  </div>
+
+  <div class="w-[90vw]  md:w-[431px] ">
+    <div class="px-8 text-center bg-bege h-full md:h-[836px] rounded-3xl flex flex-col place-items-center">
+      <img class="w-[70%] -mt-[70%]" src="./img/dra-barbara.png" alt="">
+
+      <h4 class="mt-5 text-bege3 font-bold text-3xl">Otologia</h4>
+      <h2 class="mt-8 font-bold text-2xl">Dra.Bárbara Joaquim Tessaro</h2>
+      <p class="text-xs mb-8">Dermatologista</p>
+      <p class="text-lg mb-8">A Dra. Bárbara Tessaro é dermatologista pelo HC/UFPR, Fellow em Cirurgia Dermatológica
+        pelo Instituto Azulay da Santa Casa de Misericórdia do Rio de Janeiro e membro titular da Sociedade Brasileira
+        de Dermatologia (SBD) e da Sociedade Brasileira de Cirurgia Dermatológica (SBCD).</p>
+
+      <p>Responsável pela prevenção e tratamento de doenças da pele, também domina diversos procedimentos estéticos,
+        especialmente os faciais. A Dra. Bárbara reforça nosso posicionamento em cuidar da saúde, qualidade de vida e
+        autoestima do paciente de maneira interdisciplinar.</p>
+
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-auto w-[85%] mb-2 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por Telefone >
+      </a>
+
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        target="_blank"
+        class=" flex align-middle mt-4 md:mt-0 w-[85%] mb-8 border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
+        Agendamento por WhatsApp >
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="flex flex-col items-center relative">
-  <img class="absolute top-[-40px] w-[170px] z-20" src="./img/svg/logo-stamp.svg" alt="">
+<section class="flex flex-col md:flex-row place-items-center justify-center gap-12 md:gap-24 h-[55vh]">
+  <h2 class="text-center md:text-left text-4xl">Não tratamos apenas doenças, <br /> <span class="text-bege3">Promovemos
+      qualidade de
+      vida.</span>
+  </h2>
 
-  <div class="flex flex-col md:flex-row gap-4 z-10">
-    <img class="w-[486px] z-10" src="./img/medico-paciente2.png" alt="">
+  <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+    target="_blank"
+    class="align-middle w[90vw] md:w-96  text-center border rounded-xl  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-white  hover:border-transparent hover:bg-bege hover:text-black">
+    AGENDE UMA CONSULTA
+  </a>
+</section>
 
-    <div class="flex flex-col px-4 md:px-0  justify-center item-center max-w-[473px]">
-      <h2 class="text-3xl">Não tratamos doenças, <br /> queremos promover saúde e qualidade de vida.</h2>
+<section class="grid md:grid-cols-3 justify-center gap-y-20 justify-items-center relative pb-12">
+  <div class="flex flex-col w-[220px] z-10">
+    <span class="block h-[5px] bg-bege3 w-[30px]"></span>
+    <h3 class="font-bold text-xl my-2">Cirurgia Facial</h3>
+    <p class="text-bege3 text-xl">Rinoplastia</p>
+    <p class="text-bege3 text-xl">Otoplastia</p>
+    <p class="text-bege3 text-xl">Blefaroplastia </p>
+    <p class="text-bege3 text-xl">Lobuloplastia <br />(redução de lóbulo) </p>
+  </div>
 
-      <p class="text-xl mt-4">Os pacientes terão acesso aos meios diagnósticos de alto padrão e tratamentos com a menor
-        invasividade
+  <div class="flex flex-col w-[220px] z-10">
+    <span class="block h-[5px] bg-bege3 w-[30px]"></span>
+    <h3 class="font-bold text-xl my-2">Otorrinolaringologia</h3>
+    <p class="text-bege3 text-xl">Gripes, resfriados</p>
+    <p class="text-bege3 text-xl">e sinusites </p>
+    <p class="text-bege3 text-xl">Desvio de septo</p>
+    <p class="text-bege3 text-xl">Alectomia</p>
+    <p class="text-bege3 text-xl">Implante coclear </p>
+    <p class="text-bege3 text-xl">Labirintopatias, vertigem e zumbido </p>
+    <p class="text-bege3 text-xl">Perda Auditiva </p>
+  </div>
+
+  <div class="flex flex-col w-[220px] z-10">
+    <span class="block h-[5px] bg-bege3 w-[30px]"></span>
+    <h3 class="font-bold text-xl my-2">Audiometria</h3>
+    <p class="text-bege3 text-xl">Impedanciometria </p>
+    <p class="text-bege3 text-xl">Teste de Prótese Auditiva</p>
+  </div>
+
+  <div class="flex flex-col w-[220px] z-10">
+    <span class="block h-[5px] bg-bege3 w-[30px]"></span>
+    <h3 class="font-bold text-xl my-2">Alergologia e <br /> imunologia</h3>
+    <p class="text-bege3 text-xl">Rinite Alérgica</p>
+    <p class="text-bege3 text-xl">Teste Imunológico</p>
+    <p class="text-bege3 text-xl">Teste alérgico</p>
+    <p class="text-bege3 text-xl">Teste de contato</p>
+    <p class="text-bege3 text-xl">Vacinas para Alergias</p>
+  </div>
+
+  <div class="flex flex-col w-[220px] z-10">
+    <span class="block h-[5px] bg-bege3 w-[30px]"></span>
+    <h3 class="font-bold text-xl my-2">Gastroenterologia</h3>
+    <p class="text-bege3 text-xl">Rinite Alérgica </p>
+    <p class="text-bege3 text-xl">Teste Imunológico</p>
+    <p class="text-bege3 text-xl">Teste alérgico </p>
+    <p class="text-bege3 text-xl">Teste de contato </p>
+    <p class="text-bege3 text-xl">Vacinas para Alergias </p>
+  </div>
+
+  <div class="flex flex-col w-[220px] z-10">
+    <span class="block h-[5px] bg-bege3 w-[30px]"></span>
+    <h3 class="font-bold text-xl my-2">Dermatologia</h3>
+    <p class="text-bege3 text-xl">Doenças de Pele</p>
+    <p class="text-bege3 text-xl">Botox</p>
+    <p class="text-bege3 text-xl">Preenchimentos</p>
+    <p class="text-bege3 text-xl">Fios de Sustentação</p>
+    <p class="text-bege3 text-xl">Peeling</p>
+    <p class="text-bege3 text-xl">Tratamentos estéticos, dermatológicos e cosmiátricos</p>
+  </div>
+
+  <img class="absolute left-0 top-0 w-[100vw] z-0 h-full" src="./img/background2.jpg" alt="">
+</section>
+
+<section class="flex flex-col place-items-center py-32">
+  <h2 class="text-3xl text-bege3">CONVÊNIOS</h2>
+  <h4 class="text-xl md:text-3xl font-medium text-center">Atendemos, entre outros,<br /> os convênios abaixo:</h4>
+
+  <div class="grid grid-cols-2 md:flex gap-16 mt-20 px-4 md:px-0">
+    <img class="object-contain" src="./img/sane.jpg" alt="">
+    <img class="object-contain" src="./img/sinam.jpg" alt="">
+    <img class="object-contain" src="./img/unimed.jpg" alt="">
+    <img class="object-contain" src="./img/bradesco.jpg" alt="">
+    <img class="object-contain" src="./img/copel.jpg" alt="">
+  </div>
+
+  <p class="mt-16 text-base text-center">Os não listados, atendemos preços diferenciados conforme reembolso</p>
+</section>
+
+<section class="relative mb-12 md:mb-[20vh]">
+  <div class="z-10 flex flex-col md:flex-row place-items-center justify-center gap-16">
+    <img class="z-10 -mt-12" src="./img/clinica.png" alt="">
+
+    <div class="z-10 md:w-[438px]">
+      <h2 class="text-center md:text-left text-bold text-3xl">Um espaço <br /> pensado para você</h2>
+      <p class="text-center md:text-left ">Os pacientes terão acesso aos meios diagnósticos de alto padrão e tratamentos
+        com a menor invasividade
         possível, sem abrir mão da excelência no resultado.</p>
 
       <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
         target="_blank"
-        class="w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
+        class="mx-auto md:mx-0 flex align-middle mt-4 md:mt-8 mb-8 border rounded-xl  w-fit tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-left text-white  hover:border-transparent hover:bg-bege hover:text-black">
         AGENDE UMA CONSULTA
       </a>
     </div>
   </div>
 
-  <img class="absolute left-0 top-0 w-[100vw]" src="./img/background1.jpg" alt="">
-</section>
-
-<div class="bg-white h-[10vh] w-full"></div>
-
-<section class="flex flex-col md:flex-row justify-center h-[570px]   relative">
-  <div class="flex flex-col px-4 md:px-0 max-w-[850px] justify-center text-center place-items-center z-10">
-    <h2 class="text-3xl">Proporcionamos um plano de acompanhamento, prevenindo doenças e o envelhecimento precoce em
-      todas as áreas de atuação dos nossos médicos</h2>
-
-    <p class="text-xl mt-4 max-w-[650px]">Ouvido, nariz, garganta, surdez, labirintopatias, alergia e imunologia,
-      medicina do sono,
-      dermatologia, face e estética.</p>
-
-    <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
-      target="_blank"
-      class="w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
-      AGENDE UMA CONSULTA
-    </a>
-  </div>
-
-
-  <img class="absolute left-0 top-0 w-[100vw] h-[535px]" src="./img/background2.jpg" alt="">
-
+  <img class="absolute left-0 top-0 w-[100vw] z-0 h-full" src="./img/background1.jpg" alt="">
 </section>
 
 <section class="relative flex flex-col md:flex-row h-[700px] gap-8 place-items-center justify-center">
@@ -277,13 +369,13 @@ layout: "base.njk"
     <p class="text-xl mt-4 max-w-[650px]">Av. Sete de Setembro, 6520 - 2º andar <br /> Hospital Clínica Los Angeles</p>
 
     <a href="https://maps.app.goo.gl/hjtbbs5rTyRJabNk9" target="_blank"
-      class="w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-center text-white  hover:border-transparent hover:bg-orange-600 hover:text-white">
+      class="mx-auto md:mx-0 w-72 mt-8 mb-8 border rounded-full  tracking-widest	 border-bege3 bg-bege3 px-4 py-2 text-center text-white  hover:border-transparent hover:bg-bege hover:text-white">
       ACESSAR O MAPA
     </a>
   </div>
 </section>
 
-<footer class="flex w-full flex-col items-center overflow-hidden bg-bege3 pb-4">
+<footer class="flex w-full flex-col items-center overflow-hidden bg-footer pb-4">
   <div class="flex flex-col md:flex-row place-items-center justify-around w-full py-12">
     <img class="mb-12 md:mb0" src="./img/svg/novva-logo.svg" alt="">
 
