@@ -1,0 +1,92 @@
+@import "./colors";
+@import "./global";
+
+.begeButton {
+  border: none;
+  width: fit-content;
+  background: $bege3;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  line-height: 2.2rem;
+  color: $bege1;
+  padding: 1.7rem 1.5rem;
+  border-radius: 10px;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  :hover{
+     background: $preto;
+     cursor: pointer;
+  }
+  @media screen and (max-width:700px) {
+   font-size: 1.4rem;
+   padding: 0.5rem 0.8rem;
+   line-height: normal;
+  }
+  @media (min-width:701px) and (max-width:1200px){
+   font-size: 1.4rem;
+   padding: 1.2rem;
+   line-height: normal;
+  }
+}
+.begeClaroButton {
+   border: none;
+   background: $bege1;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   font-weight: 400;
+   letter-spacing: 0.2rem;
+   padding: 0.7rem 1rem;
+   line-height: 1.3rem;
+   color: $bege3;
+   border-radius: 5px;
+   transition: 0.2s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   width: 100%;
+   :hover{
+      filter: brightness(0.5);
+      cursor: pointer;
+   }
+ }
+.pretoButton {
+   border: none;
+   width: 32rem;
+   height: 4rem;
+   background: $preto;
+   font-size: 1.8rem;
+   font-weight: 400;
+   letter-spacing: 0.1rem;
+   line-height: 2.2rem;
+   color: $bege1;
+   border-radius: 10px;
+   transition: 0.2s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+
+   &:hover{
+      filter: brightness(0.5);
+      cursor: pointer;
+   }
+   @media screen and (max-width:700px) {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      padding: 0.5rem 0.8rem;
+      width: 60%;
+      height: 3rem;
+      line-height: normal;
+   }
+   @media (min-width:701px) and (max-width:1200px){
+      font-size: 1.6rem;
+      padding: 1.2rem;
+      line-height: normal;
+     }
+}

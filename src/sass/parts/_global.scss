@@ -1,0 +1,67 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a, p, h1, h2, h3, h4 {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+.whatsapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 8rem;
+  right: 4rem;
+  height: 10rem;
+}
+
+@media screen and (min-width: 701px){
+.mobile-only{
+  display: none !important; 
+}
+
+}
+
+@media screen and (max-width: 700px) {
+  .desktop-only{
+    display: none !important;
+  }
+  .whatsapp {
+    bottom: 2.5rem;
+    left: 80%;
+    height: 6rem;
+    width: 6rem;
+    img{
+      width: 100%;
+    }
+  }
+}
+@media (min-width:701px) and (max-width:1200px){
+  .whatsapp {
+    bottom: 2.5rem;
+    right: 10%;
+    height: 7rem;
+    width: 7rem;
+    img{
+      width: 100%;
+    }
+  }
+}
