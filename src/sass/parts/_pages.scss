@@ -1,0 +1,70 @@
+header{
+    position: relative;
+    > img{
+        width: 100%;;
+        height: auto;
+    }
+    .wrap-icon{
+        position: absolute;
+        top: 6rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8rem;
+        align-items: center;
+        img{
+            max-width: 10rem;
+        }
+        a{
+            color: $bege1;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem;
+        }
+    }
+    .wrap-header{
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        h2{
+            font-size: 5.6rem;
+            color: $bege1;
+            font-weight: 500;
+            line-height: 6rem;
+        }
+    }
+}
+
+.srOnly {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important; /* 2 */
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important; /* 3 */
+  }
+
+  .toggle-button {
+    display: inline;
+    color: $preto;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 300;
+    grid-row: 1;
+  }
+
+  .more-info {
+    display: none;
+    color: $preto;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    animation: appear 1s linear;
+    grid-row: 2;
+    margin-bottom: 1rem;
+  }

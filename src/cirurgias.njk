@@ -1,0 +1,156 @@
+---
+title: Novva Otorrino - Curitiba
+layout: "base.njk"
+cssPath: "/css/page.css"
+---
+
+<header>
+    <img class="desktop-only" src="../img/pages/cirurgia-header.png" alt="" />
+    <img class="mobile-only" src="./img/banner-mobile.png" alt="" />
+    
+    <div class="wrap-icon">
+        <img src="../img/pages/logo-header.png" alt="">
+        <a href="/">Início</a>
+    </div>
+    <div class="wrap-header">
+        <h2>
+            Cirurgias <br/> plásticas
+        </h2>
+    </div>
+</header>
+
+<nav>
+    <div>
+      <a><h4 class="selected">Cirurgias plásticas</h4></a>
+    </div>
+    <div>
+      <a href="/otorrinolaringologia"><h4>Otorrinolaringologia</h4></a>
+    </div>
+    <div>
+      <a href="/audiometria"><h4>Audiometria</h4></a>
+    </div>
+    <div>
+      <a href="/alergologia"><h4>Alergologia <br />
+        e imunologia</h4></a>
+    </div>
+    <div>
+      <a href="/dermatologia"><h4>Dermatologia</h4></a>
+    </div>
+    <div>
+      <a href="/gastroenterologia"><h4>Gastroenterologia</h4></a>
+    </div>
+</nav>
+
+<div class="selector">
+    <a href=""></a>
+</div>
+
+
+<section class="servicos" id="servicos">
+    <div class="wrapServicos">
+      <h2></h2>
+    </div>
+    <div class="itens">
+      <div class="item" onclick="toggleInfo('cidadania')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="cidadania">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('matrimonio')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="matrimonio">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('busca')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="busca">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('revalidacao')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="revalidacao">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('traducoes')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="traducoes">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('apostilamento')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="apostilamento">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('aire')">
+        <h5>A.I.R.E.</h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="aire">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('analise')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="analise">
+          <p></p>
+        </div>
+      </div>
+      <div class="item" onclick="toggleInfo('retificacoes')">
+        <h5></h5>
+        <span class="srOnly"></span>
+        <span class="toggle-button">+</span>
+        <div class="more-info" id="retificacoes">
+          <p></p>
+        </div>
+      </div>
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton upper"> Entre em contato</a>
+    </div>
+  </section>
+
+{% include 'footer.njk' %}
+
+
+<script>
+    function toggleInfo(id) {
+      
+      const infoDiv = document.getElementById(id);
+      const button = infoDiv.previousElementSibling;
+        if (infoDiv.style.display === 'none' || infoDiv.style.display === '') {
+          reset()
+          infoDiv.style.display = 'block';
+          button.textContent = '-';
+        } else {
+          infoDiv.style.display = 'none';
+          button.textContent = '+';
+        }
+      }
+    function reset(){
+      const info = document.getElementsByClassName('more-info');
+      const button = document.getElementsByClassName('toggle-button');
+     for (let i=0; i < info.length; i++){
+      info[i].style.display = "none"
+      button[i].textContent = '+';
+     } 
+    }
+
+</script>

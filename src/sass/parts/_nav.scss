@@ -5,6 +5,9 @@ nav{
     align-items: center;
     justify-content: center;
     margin-top: -3px;
+    .selected {
+        font-weight: 700;
+    }
     a{
         color: $bege3;
         font-size: 1.8rem;
@@ -63,4 +66,6 @@ nav{
         }
     }
 }
+
+
 
