@@ -6,7 +6,7 @@ cssPath: "/css/page.css"
 
 <header>
   <img class="desktop-only" src="../img/pages/cirurgia-header.png" alt="" />
-  <img class="mobile-only" src="./img/banner-mobile.png" alt="" />
+  <img class="mobile-only" src="../img/pages/cir-header-mobile.png" alt="" />
 
   <div class="wrap-icon">
     <img src="../img/pages/logo-header.png" alt="" />
@@ -47,11 +47,11 @@ cssPath: "/css/page.css"
 </nav>
 
 <div class="selector">
-  <button class="begeButton select selected" id="rinoplastia">
-    RINOPLASTIA
+  <button class="begeButton select selected upper" id="rinoplastia">
+    Rinoplastia
   </button>
-  <button class="begeButton select" id="otoplastia">OTOPLASTIA</button>
-  <button class="begeButton select" id="blefaroplastia">BLEFAROPLASTIA</button>
+  <button class="begeButton select upper" id="otoplastia">Otoplastia</button>
+  <button class="begeButton select upper" id="blefaroplastia">Blefaroplastia</button>
 </div>
 <section id="procedimento">
   <div class="first">
@@ -136,36 +136,73 @@ cssPath: "/css/page.css"
     <div class="wrap-fourth">
         <div class="left">
             <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
                 <h5>Consulta online e presencial</h5>
+              </div>  
                 <p>O Dr. Luciano examinará o seu nariz para compreender os seus objetivos.</p>
             </div>
             <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
                 <h5>Simulador de resultado cirúrgico</h5>
+              </div>
                 <p>O programa permite ao Dr. Luciano compreender a insatisfação estética do paciente, para que juntos realizem um esboço do que será feito no procedimento.</p>
             </div>
             <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
                 <h5>Agendamento da cirurgia</h5>
+              </div>
                 <p>O paciente deverá comparecer ao local pelo menos 1 hora antes do horário programado para assinar os documentos necessários e ser preparado para o procedimento.</p>
             </div>
             <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
                 <h5>Procedimento</h5>
+              </div>
                 <p>A cirurgia levará em torno de 1h30 e o paciente receberá alta no mesmo dia.</p>
             </div>
             <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
                 <h5>Recuperação</h5>
-                <p>O paciente utiliza curativo por sete dias e geralmente tem pouco edema e inchaço./p>
+              </div>
+                <p>O paciente utiliza curativo por sete dias e geralmente tem pouco edema e inchaço.</p>
             </div>
             <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
                 <h5>Cuidados pós-cirúrgicos</h5>
-                <p>Cumprir orientações de cuidado pós cirurgia e comparecer as consultas.</p>
+              </div>
+                <p>Cumprir orientações de cuidado pós cirurgia e comparecer às consultas.</p>
             </div>
         </div>
-        <img src="../img/pages/rinoplastia2.png" alt="">
+        <img class="desktop-only" src="../img/pages/rinoplastia2.png" alt="">
+        <img class="mobile-only" src="../img/pages/rinoplastia2-mob.png" alt="">
     </div>
+  </div>
+  <div class="fifth">
+    <div class="wrap-fifth">
+      <div class="fifth-left">
+        <h2>PROCEDIMENTOS <span>ASSOCIADOS</span></h2>
+        <p>Muitas vezes os pacientes necessitam realizar uma Septoplastia e/ou Turbinectomia (remoção de cornetos nasais), concomitantemente à Rinoplastia.</p>
+      </div>
+      <div class="fifth-right">
+        <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
+        <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton"
+        >Agendar Avaliação</a
+      >
+      </div>
+
+    </div>  
+
   </div>
 </section>
 
-<section class="perguntas">
+<!-- <section class="perguntas">
   <h2><b>PERGUNTAS</b> FREQUENTES</h2>
   <div class="itens">
     <div class="item" onclick="toggleInfo('posso')">
@@ -262,7 +299,7 @@ cssPath: "/css/page.css"
       Entre em contato</a
     >
   </div>
-</section>
+</section> -->
 
 {% include 'footer.njk' %}
 
@@ -301,25 +338,157 @@ cssPath: "/css/page.css"
   function updateSection() {
     if (selected === "rino") {
       section.innerHTML = `
-                 <h1>RINOPLASTIA</h1>
+<div class="first">
+    <h1>RINOPLASTIA</h1>
     <div class="top-right">
-        <p>O Dr Luciano preza por um resultado estético que resolva todos as imperfeições que incomodem os pacientes, garantindo, ao mesmo tempo, que se obtenha um resultado natural, sem feições de cirurgia plástica.</p>
-        <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton">Agendar Avaliação</a>
+      <p>
+        O Dr Luciano preza por um resultado estético que resolva todos as
+        imperfeições que incomodem os pacientes, garantindo, ao mesmo tempo, que
+        se obtenha um resultado natural, sem feições de cirurgia plástica.
+      </p>
+      <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton"
+        >Agendar Avaliação</a
+      >
     </div>
-    <img src="../img/pages/rinoplastia.png" alt="">
-    <h2><span>BENEFÍCIOS DA RINOPLASTIA</span><br/>COM O DR. LUCIANO</h2>
+    <img src="../img/pages/rinoplastia.png" alt="" />
+    <h2><span>BENEFÍCIOS DA RINOPLASTIA</span><br />COM O DR. LUCIANO</h2>
     <div class="bottom-right">
-        <p>Anestesia local com sedação;</p>
-        <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
-        <p>Laser ultrassônico para corte e modelagem do osso (sem uso de martelo);</p>
-        <p>Sem uso de Tampões;</p>
-        <p>Rápida recuperação com alta no mesmo dia.</p>
+      <p>Anestesia local com sedação;</p>
+      <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
+      <p>
+        Laser ultrassônico para corte e modelagem do osso (sem uso de martelo);
+      </p>
+      <p>Sem uso de Tampões;</p>
+      <p>Rápida recuperação com alta no mesmo dia.</p>
     </div>
+  </div>
+  <div class="second">
+    <h2>DIFERENCIAIS <span>DR. LUCIANO</span></h2>
+    <div class="icones">
+      <div class="item">
+        <img src="../img/pages/foco.png" alt="" />
+        <p>Foco no resultado harmonioso e natural</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/simulacao.png" alt="" />
+        <p>Simulação com resultado cirúrgico</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/medico.png" alt="" />
+        <p>Médico cirurgião com mais de 17 anos de experiência</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/consulta.png" alt="" />
+        <p>Consulta online e presencial</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgia.png" alt="" />
+        <p>Cirurgia combinada de otoplastia blefaroplastia ou septoplastia</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/aberta.png" alt="" />
+        <p>Cirurgia aberta ou fechada</p>
+      </div>
+    </div>
+    <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton"
+        >Agendar Avaliação</a
+      >
+  </div>
+  <div class="third">
+    <h2>QUANDO FAZER UMA <span>RINOPLASTIA?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas e mudanças no nariz, como:</p>
+    <div class="wrap-quando">
+        <p>Ponta caída<br/> ou grossa</p>
+        <p>Abertura <br/> nasal largada</p>
+        <p>Nariz torto ou <br/>grande</p>
+    </div>
+    <a
+    href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+    class="begeButton"
+    >Agendar Avaliação</a
+  >
+  </div>
+  <div class="fourth">
+    <div class="fourth-intro">
+        <h4>PASSO A PASSO</h4>
+        <h2>COMO FUNCIONA O <br/><span>PROCEDIMENTO?</span></h2>
+    </div>
+    <div class="wrap-fourth">
+        <div class="left">
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Consulta online e presencial</h5>
+              </div>  
+                <p>O Dr. Luciano examinará o seu nariz para compreender os seus objetivos.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Simulador de resultado cirúrgico</h5>
+              </div>
+                <p>O programa permite ao Dr. Luciano compreender a insatisfação estética do paciente, para que juntos realizem um esboço do que será feito no procedimento.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Agendamento da cirurgia</h5>
+              </div>
+                <p>O paciente deverá comparecer ao local pelo menos 1 hora antes do horário programado para assinar os documentos necessários e ser preparado para o procedimento.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Procedimento</h5>
+              </div>
+                <p>A cirurgia levará em torno de 1h30 e o paciente receberá alta no mesmo dia.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Recuperação</h5>
+              </div>
+                <p>O paciente utiliza curativo por sete dias e geralmente tem pouco edema e inchaço.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Cuidados pós-cirúrgicos</h5>
+              </div>
+                <p>Cumprir orientações de cuidado pós cirurgia e comparecer às consultas.</p>
+            </div>
+        </div>
+        <img class="desktop-only" src="../img/pages/rinoplastia2.png" alt="">
+        <img class="mobile-only" src="../img/pages/rinoplastia2-mob.png" alt="">
+    </div>
+  </div>
+  <div class="fifth">
+    <div class="wrap-fifth">
+      <div class="fifth-left">
+        <h2>PROCEDIMENTOS <span>ASSOCIADOS</span></h2>
+        <p>Muitas vezes os pacientes necessitam realizar uma Septoplastia e/ou Turbinectomia (remoção de cornetos nasais), concomitantemente à Rinoplastia.</p>
+      </div>
+      <div class="fifth-right">
+        <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo Otorrinolaringologista.</p>
+        <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton"
+        >Agendar Avaliação</a
+      >
+      </div>
 
+    </div>  
+
+  </div>
             `;
     } else if (selected === "oto") {
       section.innerHTML = `
-                 <h1>OTOPLASTIA</h1>
+ <div class="first">
+    <h1>OTOPLASTIA</h1>
     <div class="top-right">
         <p>Melhore a posição e angulação de suas orelhas e com isso, destaque os aspectos positivos do seu rosto.</p>
         <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton">Agendar Avaliação</a>
@@ -333,10 +502,99 @@ cssPath: "/css/page.css"
         <p>Procedimento muito pouco invasivo;</p>
         <p>Alta no mesmo dia.</p>
     </div>
+  </div>
+  <div class="second">
+    <h2>DIFERENCIAIS <span>DR. LUCIANO</span></h2>
+    <div class="icones-2">
+      <div class="item">
+        <img src="../img/pages/foco.png" alt="" />
+        <p>Foco no resultado harmonioso e natural</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/medico.png" alt="" />
+        <p>Médico cirurgião com mais de 17 anos de experiência</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/consulta.png" alt="" />
+        <p>Consulta online e presencial</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgia.png" alt="" />
+        <p>Cirurgia combinada de otoplastia, blefaroplastia ou rinoplastia</p>
+      </div>
+    </div>
+    <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton"
+        >Agendar Avaliação</a
+      >
+  </div>
+  <div class="third">
+    <h2>QUANDO FAZER UMA <span>OTOPLASTIA?</span></h2>
+    <div class="wrap-quando2">
+        <p>Correção das orelhas<br/>em abano, angulação<br/>das orelhas e/ou orelhas <br/>proeminentes</p>
+        <p>Correção de<br/>deformações genéticas<br/>ou acidentais</p>
+        <p>Redução de orelhas<br/>muito grandes e/ou<br/>desproporcionais</p>
+        <p>Redução dos<br/>lóbulos aumentados</p>
+    </div>
+    <a
+    href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+    class="begeButton"
+    >Agendar Avaliação</a
+  >
+  </div>
+  <div class="fourth">
+    <div class="fourth-intro">
+        <h4>PASSO A PASSO</h4>
+        <h2>COMO FUNCIONA O <br/><span>PROCEDIMENTO?</span></h2>
+    </div>
+    <div class="wrap-fourth">
+        <div class="left">
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Primeira consulta online ou presencial</h5>
+              </div>  
+                <p>O Dr. Luciano te examinará e indicará o procedimento adequado para você.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Agendamento da cirurgia</h5>
+              </div>
+                <p>O paciente deverá chegar com uma hora de antecedência na clínica e ficar 8 horas em jejum.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Procedimento</h5>
+              </div>
+                <p>A cirurgia leva em torno de 1 hora e meia e a alta será no mesmo dia.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Recuperação</h5>
+              </div>
+                <p>A cirurgia é pouco invasiva, e o paciente normalmente apresenta pouca dor. Curativos por 48-72 horas e os pontos são retirados em 14 dias.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Cuidados pós-cirúrgicos</h5>
+              </div>
+                <p>Cumprir orientações de cuidado pós cirurgia e comparecer às consultas.</p>
+            </div>
+        </div>
+        <img class="desktop-only" src="../img/pages/otoplastia2.png" alt="">
+        <img class="mobile-only" src="../img/pages/otoplastia2-mob.png" alt="">
+    </div>
+  </div>
             `;
     } else if (selected === "blefaro") {
       section.innerHTML = `
-                 <h1>BLEFAROPLASTIA</h1>
+<div class="first">
+    <h1>BLEFAROPLASTIA</h1>
     <div class="top-right">
         <p>Seus olhos e pálpebras sem flacidez ou bolsas criadas pelo envelhecimento. <br/>Rejuvenesça o terço superior do seu rosto com procedimento e alta no mesmo dia.</p>
         <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton">Agendar Avaliação</a>
@@ -350,6 +608,94 @@ cssPath: "/css/page.css"
         <p>Procedimento muito pouco invasivo;</p>
         <p>Alta no mesmo dia.</p>
     </div>
+  </div>
+  <div class="second">
+    <h2>DIFERENCIAIS <span>DR. LUCIANO</span></h2>
+    <div class="icones-2">
+      <div class="item">
+        <img src="../img/pages/foco.png" alt="" />
+        <p>Foco no resultado harmonioso e natural</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/medico.png" alt="" />
+        <p>Médico cirurgião com mais de 17 anos de experiência</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/consulta.png" alt="" />
+        <p>Consulta online e presencial</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgia.png" alt="" />
+        <p>Cirurgia combinada de otoplastia, blefaroplastia ou rinoplastia</p>
+      </div>
+    </div>
+    <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton"
+        >Agendar Avaliação</a
+      >
+  </div>
+  <div class="third">
+    <h2>QUANDO FAZER UMA <span>BLEFAROPLASTIA?</span></h2>
+    <div class="wrap-quando">
+        <p>Olhos cansados (caídos)</p>
+        <p>Bolsas (principalmente<br/>nas pálpebras inferiores)</p>
+        <p>Limitação do campo<br/>visual (excesso de pele)</p>
+        <p>Olheiras</p>
+    </div>
+    <a
+    href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+    class="begeButton"
+    >Agendar Avaliação</a
+  >
+  </div>
+  <div class="fourth">
+    <div class="fourth-intro">
+        <h4>PASSO A PASSO</h4>
+        <h2>COMO FUNCIONA O <br/><span>PROCEDIMENTO?</span></h2>
+    </div>
+    <div class="wrap-fourth">
+        <div class="left">
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Primeira consulta online ou presencial</h5>
+              </div>  
+                <p>O Dr. Luciano te examinará e indicará o procedimento adequado para você.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Agendamento da cirurgia</h5>
+              </div>
+                <p>O paciente deverá chegar com uma hora de antecedência na clínica e ficar 8 horas em jejum.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Procedimento</h5>
+              </div>
+                <p>A cirurgia leva em torno de 1 hora e meia e a alta será no mesmo dia.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Recuperação</h5>
+              </div>
+                <p>A cirurgia é pouco invasiva, e o paciente normalmente apresenta pouca dor. Curativos por 48-72 horas e os pontos são retirados em 14 dias.</p>
+            </div>
+            <div class="item">
+              <div class="bolinha">
+                <img src="../img/pages/bolinha.png" alt="">
+                <h5>Cuidados pós-cirúrgicos</h5>
+              </div>
+                <p>Cumprir orientações de cuidado pós cirurgia e comparecer às consultas.</p>
+            </div>
+        </div>
+        <img class="desktop-only" src="../img/pages/blefaroplastia2.png" alt="">
+        <img class="mobile-only" src="../img/pages/blefaroplastia2-mob.png" alt="">
+    </div>
+  </div>
             `;
     }
   }
