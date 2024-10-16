@@ -9,15 +9,16 @@
 
   <link href="https://db.onlinewebfonts.com/c/90fe831fa65b9632a4790c1a1732e9ab?family=FreightNeo+W03+Medium" rel="stylesheet">
   <link rel="stylesheet" href="{{ cssPath }}" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
   rel="stylesheet">
   <link rel="icon" href="../img/logo.png" />
-  
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <title>{{ title }}</title>
@@ -52,5 +53,11 @@
   <img class="w-3/4 ml-auto" src="../img/svg/whatsapp.svg" alt="">
 </a>
 </body>
+
+<script>
+  AOS.init({
+       duration: 3000
+   });
+</script>
 
 </html>
