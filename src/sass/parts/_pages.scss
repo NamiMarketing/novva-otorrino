@@ -982,11 +982,11 @@ header {
         width: 105%;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        z-index: -1;
         img{
           width: 11rem;
         }
         .texto{
+          z-index: -1;
           padding: 0 0.5rem 0 2.8rem;
           margin-top: -1rem;
           margin-left: -1.8rem;
