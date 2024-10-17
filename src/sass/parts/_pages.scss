@@ -1314,3 +1314,152 @@ header {
     }
   }
 }
+
+//pagina de audiometria
+
+.exames{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 10rem auto 15rem;
+  gap: 5rem;
+  .exames-right{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-self: flex-end;
+    h1{
+      color: $cinza1;
+      font-size: 6rem;
+      line-height: 6.6rem;
+      font-weight: 600;
+      font-family: "freightNeo W03 Medium", sans-serif;
+    }
+    p{
+      font-size: 2rem;
+      line-height: 2.8rem;
+      color: $cinza3;
+    }
+  }
+}
+.textos{
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 11rem;
+  .textos-item{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    h2{
+      font-weight: 400;
+    }
+    p{
+      font-size: 2rem;
+      line-height: 2.8rem;
+    }
+  }
+  >p{
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width:700px){
+  .exames{
+    flex-direction: column;
+    width: 85%;
+    margin: 4rem auto 4rem;
+    gap: 4rem;
+    >img{
+      order: 2;
+      width: 100%;
+    }
+    .exames-right{
+      order: 1;
+      gap: 3rem;
+      align-self: center;
+      h1{
+        font-size: 2.4rem;
+        line-height: 3rem;
+        text-align: center;
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: center;
+      }
+      a{
+        margin: auto;
+      }
+    }
+  }
+  .textos{
+    gap: 4rem;
+    width: 85%;
+    margin: 0 auto 4rem;
+    .textos-item{
+      gap: 2rem;
+      h2{
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
+    }
+    >p{
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      width: 90%;
+    }
+  }
+}
+@media (min-width:701px) and (max-width:1200px){
+  .exames{
+    width: 85%;
+    margin: 7rem auto 7rem;
+    gap: 3rem;
+    .exames-right{
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      align-self: center;
+      h1{
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
+      p{
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
+    }
+  }
+  .textos{
+    gap: 4rem;
+    width: 85%;
+    margin: 0 auto 7rem;
+    .textos-item{
+      gap: 2rem;
+      h2{
+        font-size: 2.5rem;
+      }
+      p{
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
+    }
+    >p{
+      font-size: 2rem;
+      line-height: 2.2rem;
+      width: 80%;
+    }
+  }
+}
