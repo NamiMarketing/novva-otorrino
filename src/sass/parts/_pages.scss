@@ -1242,3 +1242,75 @@ header {
     }
   }
 }
+@media (min-width:701px) and (max-width:1200px){
+  .viva{
+    align-items: center;
+    width: 85%;
+    margin: 7rem auto;
+    gap: 4rem;
+    h1{
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+    p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .respiratorias{
+    width: 80%;
+    margin: 0 auto 7rem;
+    h2{
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 4rem;
+    }
+    p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-bottom: 4rem;
+    }
+    .wrap-respiratorias{
+      align-items: flex-start;
+      gap: 3rem;
+      .item-respiratorias{
+        h5{
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .dermatologicas{
+    width: 85%;
+    h2{
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin: 6rem auto 3rem;
+    }
+    .wrap-dermatologicas{
+      .item-dermatologicas{
+        margin-top: 3rem;
+      }
+    }
+  }
+  .outras{
+    width: 80%;
+    margin: 6rem auto;
+    h2{
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+    .wrap-outras{
+      gap: 8rem;
+      p{
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
