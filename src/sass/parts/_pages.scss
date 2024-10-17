@@ -1711,21 +1711,14 @@ header {
     }
   }
   .otorrino-second{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto 6.5rem;
-    gap: 4rem;
+    width: 85%;
+    margin: 0 auto 5rem;
     h2{
-      font-weight: 400;
+      font-size: 2rem;
     }
     p{
-      font-size: 2rem;
-      line-height: 2.8rem;
-      color: $cinza3;
-      text-align: center;
+      font-size: 1.6rem;
+      line-height: 2rem;
     }
   }
   .otorrino-third {
@@ -1733,8 +1726,8 @@ header {
     width: 90%;
     margin: auto;
     h2 {
-      font-weight: 400;
-      margin-bottom: 4rem;
+      font-size: 2rem;
+      text-align: center;
     }
     .wrap-sintomas{
       flex-wrap: wrap;
@@ -1753,10 +1746,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     width: 80%;
-    margin: 10rem auto;
+    margin: 5rem auto;
     h2 {
+      font-size: 2rem;
       font-weight: 400;
       margin-bottom: 4rem;
     }
@@ -1802,19 +1796,23 @@ header {
         font-size: 2rem;
       }
       .top{
-        margin-bottom: 12rem;
+        margin-bottom: 7rem;
         h2{
-          margin-bottom: 8rem;
+          margin-bottom: 5rem;
         }
         .zumbido-item{
           display: flex;
           align-items: center;
-          gap: 4rem;
-          margin-bottom: 7rem;
-          width: 60%;
+          justify-content: center;
+          gap: 2rem;
+          margin-bottom: 5rem;
+          width: 100%;
+          img{
+            width: 5rem;
+          }
           p{
-            font-size: 2rem;
-            line-height: 2.6rem;
+            font-size: 1.6rem;
+            line-height: 2rem;
     
           }
         }
