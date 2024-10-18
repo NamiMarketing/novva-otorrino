@@ -250,6 +250,9 @@ header{
         justify-content: center;
         align-items: center;
         margin-bottom: 7rem;
+        img{
+            max-width: 15rem;
+        }
     }
     p{
        font-size: 1.6rem; 
