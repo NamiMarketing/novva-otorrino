@@ -189,8 +189,10 @@ cssPath: "/css/page.css"
   }
 
   function updateSection() {
-    if (selected === "otoneuro") {
-      section.innerHTML = `
+
+    switch(selected){
+      case "otoneuro":
+        section.innerHTML = `
     <div class="otorrino-first" data-aos="fade-right" >
       <img src="../img/pages/otorrino/lucas.png" alt="" />
       <div class="first-text">
@@ -267,8 +269,9 @@ cssPath: "/css/page.css"
       <img src="../img/pages/otorrino/otoneuro.png" alt="">
     </div>
               `;
-    } else if (selected === "otologia") {
-      section.innerHTML = `
+        break
+      case "otologia":
+        section.innerHTML = `
    <div class="otorrino-first" data-aos="fade-right" >
       <img src="../img/pages/otorrino/vanessa.png" alt="" />
       <div class="first-text">
@@ -372,6 +375,7 @@ cssPath: "/css/page.css"
         <img class="mobile-only" src="../img/pages/otorrino/otologia-mob.png" alt="">
     </div>
               `;
+        break
     }
   }
 </script>
