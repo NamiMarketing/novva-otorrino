@@ -352,8 +352,8 @@ header{
             left: 0;
             gap: 2.5rem;
             h2{
-                font-size: 2.2rem;
-                line-height: 2.6rem;
+                font-size: 2.6rem;
+                line-height: 3rem;
                 text-align: center;
             }
             div{
@@ -364,7 +364,12 @@ header{
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
-                margin-top: 5rem;
+            }
+            .begeButton{
+                width: 26rem;
+                height: 3rem;
+                margin: auto;
+                font-size: 1rem;
             }
         }
     }
