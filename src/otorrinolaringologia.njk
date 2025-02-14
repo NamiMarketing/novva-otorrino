@@ -52,14 +52,16 @@ cssPath: "/css/page.css"
 <div class="selector">
   <button class="begeButton select selected upper" id="otologia">Otologia</button>
   <button class="begeButton select upper" id="otoneurologia">Otoneurologia</button>
-  <!-- <button class="begeButton select upper" id="desvio">Desvio</button>
+  <button class="begeButton select upper" id="desvio">Desvio</button>
   <button class="begeButton select upper" id="amigdalectomia">Amigdalectomia</button>
   <button class="begeButton select upper" id="fratura">Fratura Nasal</button>
   <button class="begeButton select upper" id="tubinectomia">Tubinectomia</button>
-  <button class="begeButton select upper" id="uvulo">Uvulopalato-Faringoplastia</button>
+  <button class="begeButton select upper desktop-only" id="uvulo">Uvulopalatofaringo-plastia</button>
+  <button class="begeButton select upper mobile-only" id="uvulos">Uvulopalatofarin-goplastia</button>
   <button class="begeButton select upper" id="adenoidectomia">Adenoidectomia</button>
   <button class="begeButton select upper" id="sinusite">Sinusite</button>
-  <button class="begeButton select upper" id="adenoamigda" lang="pt-BR">Adenoamigdalectomia</button> -->
+  <button class="begeButton select upper desktop-only" id="adenoamigda" lang="pt-BR">Adenoamigdalectomia</button>
+  <button class="begeButton select upper mobile-only" id="adenoamigdas" lang="pt-BR">Adenoamigdalec-tomia</button>
 </div>
 
 <section id="otorrino" class="otorrino">
@@ -228,6 +230,13 @@ cssPath: "/css/page.css"
     uvulo.classList.add("selected");
     updateSection();
   });
+  const uvulos = document.getElementById("uvulos");
+  uvulos.addEventListener("click", () => {
+    resetSelection();
+    selected = "uvulos";
+    uvulo.classList.add("selected");
+    updateSection();
+  });
 
   const adenoidectomia = document.getElementById("adenoidectomia");
   adenoidectomia.addEventListener("click", () => {
@@ -250,6 +259,13 @@ cssPath: "/css/page.css"
     resetSelection();
     selected = "adenoamigda";
     adenoamigda.classList.add("selected");
+    updateSection();
+  });
+  const adenoamigdas = document.getElementById("adenoamigdas");
+  adenoamigdas.addEventListener("click", () => {
+    resetSelection();
+    selected = "adenoamigdas";
+    adenoamigdas.classList.add("selected");
     updateSection();
   });
 
@@ -454,11 +470,11 @@ cssPath: "/css/page.css"
         <h1>Desvio de Septo</h1>
         <div class="itens">
           <div class="item">
-            <img src="../../img/pages/otorrino/septo.png" alt="">
+            <img src="../../img/pages/otorrino/septo.svg" alt="">
             <h3>Septo <br>normal</h3>
           </div>
           <div class="item">
-            <img src="../../img/pages/otorrino/septo2.png" alt="">
+            <img src="../../img/pages/otorrino/septo2.svg" alt="">
             <h3>Septo <br>com desvio</h3>
           </div>
         </div>
@@ -505,7 +521,8 @@ cssPath: "/css/page.css"
   </div>
   <div class="others-third">
     <div class="third-left">
-      <h1>PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <h1 class="desktop-only">PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <h1 class="mobile-only">PROCEDIMENTOS <b>ASSOCIADOS</b></h1>
       <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou turbinectomia (remoção de cornetos nasais), concomitantemente ao desvio de septo.</p>
     </div>
     <div class="third-right">
@@ -740,6 +757,69 @@ cssPath: "/css/page.css"
   </div>
         `
         break
+      case "uvulos":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left" style="align-items: center;">
+        <h1 style="font-size: 2.4rem;" >Uvulopalatofaringoplastia</h1>
+        <div class="itens">
+          <div class="item">
+            <img src="../../img/pages/otorrino/uvulo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="others-right">
+        <p>Muitos pacientes sofrem com ronco e apneia. E isto pode ser provocado pela região da garganta, quando ela está mais estreita ou flácida, prejudicando o fluxo de ar.</p>
+        <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton upper">Agendar Avaliação</a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>É feito com anestesia local e sedação, rápida, sem cortes ou suturas e indolor no pós-operatório. </p>
+      <div class="wrap-respiratorias">
+          <div class="item-respiratorias">
+              <img src="../img/pages/otorrino/relogio.svg" alt="">
+              <p>10 minutos de duração</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/otorrino/anestesia.svg" alt="">
+              <p>Anestesia local com sedação</p>
+          </div>
+          <div class="item-respiratorias">
+              <img src="../img/pages/otorrino/hospital.svg" alt="">
+              <p>Hospital dia</p>
+          </div>
+      </div>
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton upper" >Agendar Avaliação</a>
+    </div>
+  </div>
+  <div class="others-second">
+    <h2>QUANDO FAZER?</span></h2>
+    <p>Este é um procedimento que pode ser realizado para resolver diversas queixas:</p>
+    <div class="wrap-quando">
+      <p>Ronco</p>
+      <p>Apneia</p>
+      <p>Sonolência diurna</p>
+      <p>Sono não reparador</p>
+    </div>
+    <a
+      href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+      class="begeButton upper"
+      >Agendar Avaliação</a
+    >
+  </div>
+  <div class="others-third">
+    <div class="third-left">
+      <h1>PROCEDIMENTOS <br/><b>ASSOCIADOS</b></h1>
+      <p>Muitas vezes os pacientes necessitam realizar uma rinoplastia e/ou septoplastia (remoção de cornetos nasais), concomitantemente à tubinectomia.</p>
+    </div>
+    <div class="third-right">
+      <p>Isso não muda a extensão da cirurgia e é fundamental o correto diagnóstico e programacão cirurgica pelo otorrinolaringologista.</p>
+      <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton upper">Agendar Avaliação</a>
+    </div>
+  </div>
+        `
+        break
       case "adenoidectomia":
         section.innerHTML = `
           <div class="others-first">
@@ -748,7 +828,7 @@ cssPath: "/css/page.css"
         <h1>Adenoidectomia</h1>
         <div class="itens">
           <div class="item">
-            <img src="../../img/pages/otorrino/adenoide.png" alt="">
+            <img src="../../img/pages/otorrino/adenoide.svg" alt="">
           </div>
         </div>
       </div>
@@ -860,6 +940,22 @@ cssPath: "/css/page.css"
         `
         break
       case "adenoamigda":
+        section.innerHTML = `
+        <div class="others-first">
+    <div class="wrap-others">
+      <div class="others-left">
+        <h1>Adenoamigdalectomia</h1>
+      </div>
+      <div class="others-right">
+        <p>É a associação entre a Adenoidectomia e Amigdalectomia no mesmo procedimento.</p>
+        <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton upper">Agendar Avaliação</a>
+      </div>
+    </div>
+   
+  </div>
+        `
+        break
+      case "adenoamigdas":
         section.innerHTML = `
         <div class="others-first">
     <div class="wrap-others">
