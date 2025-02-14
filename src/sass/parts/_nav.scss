@@ -1,21 +1,22 @@
 nav{
     background-color: $bege1;
     display: flex;
-    padding: 3.5rem 0;
+    padding: 2.5rem 0;
     align-items: center;
     justify-content: center;
     margin-top: -3px;
     .selected {
         font-weight: 700;
+        pointer-events: none;
     }
     a{
         color: $bege3;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         text-transform: uppercase;
     }
     h4{
         font-weight: 400;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         text-align: center;
     }
     div{
