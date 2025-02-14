@@ -232,10 +232,10 @@ header{
     justify-content: center;
     padding-bottom: 18rem;
     h2{
-      font-size: 2.8rem;  
-      font-weight: 500;
-      line-height: 3.4rem;
-      color: $bege3;
+        font-size: 2.8rem;  
+        font-weight: 500;
+        line-height: 3.4rem;
+        color: $bege3;
     }
     h4{
         font-size: 3rem;
@@ -248,9 +248,12 @@ header{
     .convenios-itens{
         display: flex;
         gap: 5rem;
+        width: 70%;
         justify-content: center;
         align-items: center;
+        margin: auto;
         margin-bottom: 7rem;
+        flex-wrap: wrap;
         img{
             max-width: 15rem;
         }
