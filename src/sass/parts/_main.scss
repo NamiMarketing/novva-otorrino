@@ -147,11 +147,17 @@ header{
                 width: 70%;
                 margin: 0 auto
             }
-            p{
+            .first{
+                grid-row: 1;
+                height: 17.5rem;
+            }
+            .second{
                 grid-row: 2;
                 font-size: 1.8rem;
-                width: 80%;
+                width: 90%;
                 margin: 2rem auto;
+                align-items: start;
+                height: 51rem;
             }
             .wrap-agendamento{
                 grid-row: 3;
@@ -463,11 +469,6 @@ header{
                     width: 70%;
                     margin: 0.5rem auto 0;
                 }
-                p{
-                    font-size: 1.5rem;
-                    width: 80%;
-                    margin: 2rem auto;
-                }
                 .wrap-agendamento{
                     position: initial;
                     display: flex;
@@ -478,6 +479,18 @@ header{
                     gap: 0.5rem;
                     transform: translateX(0);
                 }   
+                .first{
+                    grid-row: 1;
+                    height: auto;
+                }
+                .second{
+                    grid-row: 2;
+                    font-size: 1.5rem;
+                    width: 80%;
+                    margin: 2rem auto;
+                    align-items: start;
+                    height: auto;
+                }
             }
         }
     }
@@ -748,10 +761,13 @@ header{
                     font-size: 1.5rem;
                     width: 80%;
                 }
-                p{
-                    font-size: 1.7rem;
-                    width: 80%;
-                    margin: 2rem auto;
+                .first{
+                    grid-row: 1;
+                    height: auto;
+                }
+                .second{
+                    grid-row: 2;
+                    height: 54rem;
                 }
             }
         }
