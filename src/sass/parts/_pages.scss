@@ -2355,6 +2355,7 @@ header {
   margin: 10rem auto;
   gap: 6rem;
   height: 52.5rem;
+  max-width: 107rem;
   img{
     height: 100%;
   }
@@ -2387,6 +2388,7 @@ header {
   margin: 0 auto 9rem;
   align-items: center;
   justify-content: center;
+  max-width: 107rem;
   h3{
     font-size: 3rem;
     font-weight: 400;
@@ -2435,7 +2437,7 @@ header {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
-    margin: 0 auto 10rem;
+    margin: 0 auto;
     gap: 5rem;
   }
   .item {
@@ -2452,46 +2454,174 @@ header {
     }
   }
 }
-.ecodoppler{
+.background-gradient{
   background: linear-gradient(180deg, rgba(227, 222, 216, 0) 0%, rgba(227, 222, 216, 0.378) 100%);
-
-  .wrap-eco{
-    margin: auto;
-    padding-left: 18rem;
-    padding-bottom: 7rem;
-    display: flex;
-    position: relative;
-    
-    .left{
+  padding-bottom: 1rem;
+  padding-top: 10rem;
+  > a{
+    margin: 1rem auto 10rem;
+  }
+  .ecodoppler{
+  
+    .wrap-eco{
+      margin: auto;
+      padding-right: 10rem;
+      padding-bottom: 10rem;
       display: flex;
-      flex-direction: column;
-      gap: 4rem;
-      width: 50%;
-      color: $cinza3;
-      border-left: dashed 1px $gelo;
-      padding-left: 4rem;
-      h5{
-        font-size: 2.3rem;
-        font-weight: 500;
-        line-height: 2.6rem;
-      }
-      p{
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: 2.6rem;
-      }
-      .bolinha{
+      position: relative;
+      gap: 10rem;
+      
+      .right{
         display: flex;
-        gap: 3.1rem;
-        margin-left: -4.8rem;
-        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        width: 50%;
+        justify-content: space-between;
+        color: $cinza3;
+        border-left: dashed 1px $gelo;
+        h2{
+          font-size: 3.4rem;
+          line-height: 4.4rem;
+          font-weight: 400;
+          margin-bottom: 2rem;
+          text-transform: uppercase;
+        }
+        h5{
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 2.6rem;
+        }
+        p{
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.6rem;
+        }
+        .item{
+          padding-left: 4.7rem;
+        }
+        .bolinha{
+          display: flex;
+          gap: 3.1rem;
+          margin-left: -4.8rem;
+          align-items: center;
+        }
+      }
+   
+    }
+  
+  }
+  .eletrocardiograma{
+    >h2{
+      font-weight: 400;
+      margin-bottom: 4rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    >p{
+      font-size: 2rem;
+      line-height: 2.8rem;
+      color: $cinza3;
+      text-align: center;
+      width: 65%;
+      margin: 0 auto 8rem;
+    }
+    .wrap-eletro{
+      margin: auto;
+      padding-left: 10rem;
+      padding-bottom: 7rem;
+      display: flex;
+      justify-content: space-between;      
+      .left{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: 50%;
+        color: $cinza3;
+        border-left: dashed 1px $gelo;
+        padding-left: 4rem;
+        justify-content: space-between;
+        .eletro-intro{
+          h3{
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+            color: $cinza1;
+            margin-left: -4.5rem;
+          }
+          h4{
+            font-size: 3.8rem;
+            line-height: 4.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $cinza1;
+          }
+        }
+        h5{
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 2.6rem;
+        }
+        p{
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.6rem;
+        }
+        .bolinha{
+          display: flex;
+          gap: 3.1rem;
+          margin-left: -4rem;
+          align-items: flex-start;
+          p{
+            margin-top: -6px;
+          }
+        }
       }
     }
-    > img{
-      position: absolute;
-      bottom: 0;
-      right: 0;
+  }
+}
+.orientacoes {
+  width: 85%;
+  margin: 12rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-weight: 400;
+    margin-bottom: 9rem;
+    text-align: center;
+    font-size: 3.2rem;
+  }
+  .icones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 5rem;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 22rem;
+    p {
+      margin-top: 1rem;
+      font-size: 1.7rem;
+      text-align: center;
+      text-transform: uppercase;
     }
+  }
+  >a{
+    margin: 6rem auto 10rem;
+  }
+  >p{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    color: $cinza1;
+    text-align: center;
+    font-style: italic;
   }
 }
 
