@@ -170,7 +170,7 @@ header {
       font-weight: 700;
       line-height: 6rem;
       color: $cinza1;
-      font-family: "freightNeo W03 Medium", sans-serif;
+      font-family: $freight;
     }
     .top-right {
       align-self: flex-start;
@@ -933,7 +933,7 @@ header {
     font-size: 6rem;
     line-height: 6.6rem;
     font-weight: 600;
-    font-family: "freightNeo W03 Medium", sans-serif;
+    font-family: $freight;
     margin-bottom: 3rem;
   }
   p{
@@ -1305,7 +1305,7 @@ header {
       font-size: 6rem;
       line-height: 6.6rem;
       font-weight: 600;
-      font-family: "freightNeo W03 Medium", sans-serif;
+      font-family: $freight;
     }
     p{
       font-size: 2rem;
@@ -1451,7 +1451,7 @@ header {
       font-size: 6rem;
       line-height: 6.6rem;
       font-weight: 600;
-      font-family: "freightNeo W03 Medium", sans-serif;
+      font-family: $freight;
     }
     p{
       font-size: 2rem;
@@ -2342,6 +2342,375 @@ header {
     }
     a{
       margin: auto;
+    }
+  }
+}
+
+//pagina de cardiologia
+
+.sandra{
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: 10rem auto;
+  gap: 6rem;
+  height: 52.5rem;
+  img{
+    height: 100%;
+  }
+  .sandra-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    h1{
+      color: $cinza1;
+      font-size: 6rem;
+      line-height: 6.6rem;
+      font-weight: 600;
+      font-family: $freight;
+      margin-top: 3rem;
+    }
+    p{
+      color: $cinza3;
+      font-size: 2rem;
+      line-height: 2.6rem;
+      font-weight: 400;
+    }
+  }
+}
+.clinica{
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto 9rem;
+  align-items: center;
+  justify-content: center;
+  h3{
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    color: $cinza1;
+  }
+  p{
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    color: $cinza3;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .wrap-respiratorias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    .item-respiratorias{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h5{
+        font-size: 1.6rem;
+        color: $bege3;
+        font-weight: 500;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+.atuacao {
+  width: 85%;
+  margin: auto;
+  h2 {
+    font-weight: 400;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  .icones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10rem;
+    gap: 5rem;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 22rem;
+    p {
+      margin-top: 1rem;
+      font-size: 1.7rem;
+      text-align: center;
+    }
+  }
+}
+.ecodoppler{
+  background: linear-gradient(180deg, rgba(227, 222, 216, 0) 0%, rgba(227, 222, 216, 0.378) 100%);
+
+  .wrap-eco{
+    margin: auto;
+    padding-left: 18rem;
+    padding-bottom: 7rem;
+    display: flex;
+    position: relative;
+    
+    .left{
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      width: 50%;
+      color: $cinza3;
+      border-left: dashed 1px $gelo;
+      padding-left: 4rem;
+      h5{
+        font-size: 2.3rem;
+        font-weight: 500;
+        line-height: 2.6rem;
+      }
+      p{
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+      }
+      .bolinha{
+        display: flex;
+        gap: 3.1rem;
+        margin-left: -4.8rem;
+        align-items: center;
+      }
+    }
+    > img{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width:700px){
+  .sandra{
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 3rem auto;
+    gap: 3.6rem;
+    img{
+      order: 2;
+      width: 100%;
+    }
+    h1{
+      font-size: 2.4rem;
+      line-height: normal;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    p{
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    a{
+      margin: auto;
+    }
+  }
+  .respiratorias{
+    width: 85%;
+    margin: 0 auto 5rem;
+    h2{
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin-bottom: 3rem;
+    }
+    p{
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin-bottom: 3rem;
+    }
+    .wrap-respiratorias{
+      flex-wrap: wrap;
+      gap: 2rem;
+      .item-respiratorias{
+        margin-bottom: 3rem;
+        img{
+          width: 4rem;
+        }
+        h5{
+          font-size: 1.5rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        p{
+          font-size: 1.4rem;
+          max-width: 19rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .dermatologicas{
+    width: 90%;
+    h2{
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+    p{
+      font-size: 1.6rem;
+      line-height: 2rem;
+      margin: 4rem auto;
+    }
+    .wrap-dermatologicas{
+      display: flex;
+      flex-direction: column;
+      .item-dermatologicas{
+        width: 105%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        img{
+          width: 11rem;
+        }
+        .texto{
+          padding: 0 0rem 0 2.8rem;
+          z-index: -1;
+          margin: -1rem 1rem 0 -1.8rem;
+          h4{
+            font-size: 1.6rem;
+          }
+          p{
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            margin: 0.5rem auto;
+          }
+        }
+      }
+      .item-dermatologicas:nth-child(2){
+        place-self: flex-end;
+        img{
+          order: 2;
+        }
+        .texto{
+          padding: 2rem 1.5rem 0 0rem;
+          margin: -1rem -1rem 0 1rem;          
+          h4{
+            text-align: right;
+          }
+          p{
+            text-align: right;
+          }
+        }
+      }
+      .item-dermatologicas:nth-child(3){
+        .texto{
+          padding: 1.5rem 0.5rem 0 2.8rem;
+        }
+      }
+    }
+  }
+  .outras{
+    width: 80%;
+    margin: 4rem auto;
+    h2{
+      font-size: 2rem;
+      line-height: 2.4rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    .wrap-outras{
+      flex-direction: column;
+      gap: 4rem;
+      p{
+        font-size: 1.8rem;
+        line-height: 2rem;
+        text-align: center;
+      }
+      .right-outras{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      a{
+        margin: 4rem auto 0;
+      }
+    }
+  }
+}
+@media (min-width:701px) and (max-width:1200px){
+  .sandra{
+    align-items: center;
+    width: 85%;
+    margin: 7rem auto;
+    gap: 4rem;
+    h1{
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+    p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .respiratorias{
+    width: 80%;
+    margin: 0 auto 7rem;
+    h2{
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin-bottom: 4rem;
+    }
+    p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin-bottom: 4rem;
+    }
+    .wrap-respiratorias{
+      align-items: flex-start;
+      gap: 3rem;
+      .item-respiratorias{
+        h5{
+          font-size: 1.6rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .dermatologicas{
+    width: 85%;
+    h2{
+      font-size: 2.5rem;
+    }
+    p{
+      font-size: 1.8rem;
+      line-height: 2rem;
+      margin: 6rem auto 3rem;
+    }
+    .wrap-dermatologicas{
+      .item-dermatologicas{
+        margin-top: 3rem;
+      }
+    }
+  }
+  .outras{
+    width: 80%;
+    margin: 6rem auto;
+    h2{
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+    .wrap-outras{
+      gap: 8rem;
+      p{
+        font-size: 1.8rem;
+        line-height: 2rem;
+      }
     }
   }
 }
