@@ -2503,7 +2503,13 @@ header {
           display: flex;
           gap: 3.1rem;
           margin-left: -5.5rem;
-          align-items: center;
+          align-items: flex-start;
+          p{
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+            margin-top: -0.3rem;
+          }
         }
       }
    
@@ -2795,7 +2801,7 @@ header {
         .right{
           display: flex;
           flex-direction: column;
-          gap: 2.2rem;
+          gap: 3.5rem;
           width: 100%;
           color: $cinza3;
           align-items: center;
@@ -2820,6 +2826,12 @@ header {
             img{
               width: .9rem;
               height: 1.3rem;
+            }
+            p{
+              font-size: 1.4rem;
+              line-height: 1.7rem;
+              margin-top: -0.3rem;
+              text-align: left;
             }
           }
         }
@@ -2900,6 +2912,8 @@ header {
             p{
               font-size: 1.4rem;
               line-height: 1.7rem;
+              margin-top: -3px;
+              text-align: left;
             }
           }
         }
