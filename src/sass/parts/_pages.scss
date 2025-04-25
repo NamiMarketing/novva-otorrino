@@ -2478,7 +2478,6 @@ header {
         width: 50%;
         justify-content: space-between;
         color: $cinza3;
-        border-left: dashed 1px $gelo;
         h2{
           font-size: 3.4rem;
           line-height: 4.4rem;
@@ -2486,15 +2485,16 @@ header {
           margin-bottom: 2rem;
           text-transform: uppercase;
         }
-        h5{
-          font-size: 2.3rem;
-          font-weight: 500;
-          line-height: 2.6rem;
-        }
         p{
           font-size: 1.8rem;
           font-weight: 400;
           line-height: 2.6rem;
+        }
+        .itens-bolinha{
+          border-left: dashed 1px $gelo;
+          gap: 3rem;
+          display: flex;
+          flex-direction: column;
         }
         .item{
           padding-left: 4.7rem;
@@ -2502,7 +2502,7 @@ header {
         .bolinha{
           display: flex;
           gap: 3.1rem;
-          margin-left: -4.8rem;
+          margin-left: -5.5rem;
           align-items: center;
         }
       }
@@ -2537,7 +2537,6 @@ header {
         gap: 4rem;
         width: 50%;
         color: $cinza3;
-        border-left: dashed 1px $gelo;
         padding-left: 4rem;
         justify-content: space-between;
         .eletro-intro{
@@ -2550,8 +2549,8 @@ header {
           }
           h4{
             font-size: 3.8rem;
-            line-height: 4.4rem;
             font-weight: 600;
+            line-height: 4.4rem;
             text-transform: uppercase;
             color: $cinza1;
           }
@@ -2566,10 +2565,66 @@ header {
           font-weight: 400;
           line-height: 2.6rem;
         }
+        .itens-bolinha{
+          border-left: dashed 1px $gelo;
+          gap: 3rem;
+          display: flex;
+          flex-direction: column;
+        }
         .bolinha{
           display: flex;
           gap: 3.1rem;
-          margin-left: -4rem;
+          margin-left: -0.8rem;
+          align-items: flex-start;
+          p{
+            margin-top: -6px;
+          }
+        }
+      }
+      .left-bioimpedancia{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: 50%;
+        color: $cinza3;
+        padding-left: 4rem;
+        justify-content: space-between;
+        .eletro-intro{
+          h3{
+            font-size: 3rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+            color: $cinza1;
+            margin-left: -4.5rem;
+          }
+          h4{
+            font-size: 3.8rem;
+            font-weight: 600;
+            line-height: 4.4rem;
+            text-transform: uppercase;
+            color: $cinza1;
+          }
+        }
+        h5{
+          font-size: 2.3rem;
+          font-weight: 500;
+          line-height: 2.6rem;
+        }
+        p{
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 2.6rem;
+        }
+        .itens-bolinha{
+          border-left: dashed 1px $gelo;
+          gap: 3rem;
+          display: flex;
+          flex-direction: column;
+        }
+        .bolinha{
+          display: flex;
+          gap: 3.1rem;
+          margin-left: -0.8rem;
           align-items: flex-start;
           p{
             margin-top: -6px;
@@ -2632,33 +2687,38 @@ header {
     width: 85%;
     margin: 3rem auto;
     gap: 3.6rem;
+    height: auto;
     img{
       order: 2;
       width: 100%;
     }
-    h1{
-      font-size: 2.4rem;
-      line-height: normal;
-      margin-bottom: 3rem;
-      text-align: center;
-    }
-    p{
-      font-size: 1.6rem;
-      line-height: 2rem;
-      margin-bottom: 3rem;
-      text-align: center;
+    .sandra-right{
+      order: 1;
+      h1{
+        font-size: 2.4rem;
+        line-height: normal;
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: center;
+      }
     }
     a{
       margin: auto;
     }
   }
-  .respiratorias{
+  .clinica{
     width: 85%;
     margin: 0 auto 5rem;
-    h2{
+    h3{
       font-size: 2rem;
       line-height: 2.4rem;
       margin-bottom: 3rem;
+      text-align: center;
+      font-weight: 600;
     }
     p{
       font-size: 1.6rem;
@@ -2686,89 +2746,253 @@ header {
       }
     }
   }
-  .dermatologicas{
-    width: 90%;
-    h2{
+  .atuacao {
+    margin: auto;
+    h2 {
       font-size: 2rem;
-      line-height: 2.4rem;
+      text-align: center;
+      margin: 0 auto 4.3rem;
     }
-    p{
-      font-size: 1.6rem;
-      line-height: 2rem;
-      margin: 4rem auto;
+    .icones {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 4rem auto 4rem;
+      gap: 2rem;
     }
-    .wrap-dermatologicas{
+    .item {
+      >img{
+        width: 4rem ;
+      }
+      p {
+        font-size: 1.5rem;
+        width: 20rem;
+      }
+    }
+    a{
+      margin: 0 auto 5rem;
+    }
+  }
+  .background-gradient{
+    background: linear-gradient(180deg, rgba(227, 222, 216, 0) 0%, rgba(227, 222, 216, 0.378) 100%);
+    padding-top: 2rem;
+    > a{
+      margin: 1rem auto 7rem;
+    }
+    .ecodoppler{
+      .wrap-eco{
+        margin: auto;
+        width: 85%;
+        padding-right: 0rem;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        position: initial;
+        gap: 4rem;
+        
+        .right{
+          display: flex;
+          flex-direction: column;
+          gap: 2.2rem;
+          width: 100%;
+          color: $cinza3;
+          align-items: center;
+          h2{
+            font-size: 2rem;
+            line-height: 2rem;
+            text-align: center;
+          }
+          > img{
+            margin: auto;
+            width: 90%;
+          }
+          p{
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            text-align: center;
+          }
+          .bolinha{
+            display: flex;
+            gap: 1.6rem;
+            margin-left: -5.23rem;
+            img{
+              width: .9rem;
+              height: 1.3rem;
+            }
+          }
+        }
+      }
+
+    }
+    .eletrocardiograma{
+      width: 85%;
+      margin: auto;
       display: flex;
       flex-direction: column;
-      .item-dermatologicas{
-        width: 105%;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        img{
-          width: 11rem;
+      align-items: center;
+      >h2{
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+      }
+      >p{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        width: 100%;
+        margin: 0 auto 4rem;
+      }
+      > img{
+        margin: 0 auto 2.5rem;
+        width: 90%;
+      }
+      .wrap-eletro{
+        margin: auto;
+        padding-left: 0rem;
+        padding-bottom: 7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        width: 100%;
+        .left{
+          display: flex;
+          flex-direction: column;
+          gap: 2.2rem;
+          width: 85%;
+          padding-left: 0;
+          margin: auto;
+          p{
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            text-align: center;
+          }
+          
+          .eletro-intro{
+            h3{
+              font-size: 1.8rem;
+              line-height: 2.4rem;
+              margin-bottom: 4rem;
+              color: $cinza1;
+              margin-left: 0rem;
+            }
+            h4{
+              font-size: 2rem;
+              line-height: 3rem;
+              text-align: center;
+            }
+          }
+          .itens-bolinha{
+            border-left: dashed 1px $gelo;
+            gap: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin-left: -3rem;
+          }
+          .bolinha{
+            display: flex;
+            gap: 1.6rem;
+            margin-left: -0.47rem;
+            img{
+              width: .9rem;
+              height: 1.3rem;
+            }
+            p{
+              font-size: 1.4rem;
+              line-height: 1.7rem;
+            }
+          }
         }
-        .texto{
-          padding: 0 0rem 0 2.8rem;
-          z-index: -1;
-          margin: -1rem 1rem 0 -1.8rem;
-          h4{
-            font-size: 1.6rem;
+        .left-bioimpedancia{
+          display: flex;
+          flex-direction: column;
+          gap: 2.2rem;
+          width: 100%;
+          padding-left: 0;
+          margin: auto;
+          > img{
+            margin: auto;
+            width: 90%;
           }
           p{
-            font-size: 1.3rem;
-            line-height: 1.5rem;
-            margin: 0.5rem auto;
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            text-align: center;
           }
-        }
-      }
-      .item-dermatologicas:nth-child(2){
-        place-self: flex-end;
-        img{
-          order: 2;
-        }
-        .texto{
-          padding: 2rem 1.5rem 0 0rem;
-          margin: -1rem -1rem 0 1rem;          
-          h4{
-            text-align: right;
+          
+          .eletro-intro{
+            h3{
+              font-size: 1.8rem;
+              line-height: 2.4rem;
+              margin-bottom: 4rem;
+              color: $cinza1;
+              margin-left: 0rem;
+            }
+            h4{
+              font-size: 2rem;
+              line-height: 3rem;
+              text-align: center;
+            }
           }
-          p{
-            text-align: right;
+          .itens-bolinha{
+            border-left: dashed 1px $gelo;
+            gap: 3rem;
+            display: flex;
+            flex-direction: column;
+            margin-left: -3rem;
           }
-        }
-      }
-      .item-dermatologicas:nth-child(3){
-        .texto{
-          padding: 1.5rem 0.5rem 0 2.8rem;
+          .bolinha{
+            display: flex;
+            gap: 1.6rem;
+            margin-left: -0.47rem;
+            img{
+              width: .9rem;
+              height: 1.3rem;
+            }
+            p{
+              font-size: 1.4rem;
+              line-height: 1.7rem;
+            }
+          }
         }
       }
     }
   }
-  .outras{
-    width: 80%;
-    margin: 4rem auto;
-    h2{
-      font-size: 2rem;
-      line-height: 2.4rem;
-      margin-bottom: 3rem;
+  .orientacoes {
+    width: 85%;
+    margin: 0rem auto 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      margin-bottom: 4rem;
       text-align: center;
+      font-size: 2rem;
     }
-    .wrap-outras{
-      flex-direction: column;
+    .icones {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 0rem auto 4rem;
       gap: 4rem;
-      p{
-        font-size: 1.8rem;
-        line-height: 2rem;
-        text-align: center;
+    }
+    .item {
+      >img{
+        width: 4rem ;
       }
-      .right-outras{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+      p {
+        font-size: 1.5rem;
+        width: 20rem;
       }
-      a{
-        margin: 4rem auto 0;
-      }
+    }
+    >a{
+      margin: 0 auto 5rem;
+    }
+    >p{
+      font-size: 1.7rem;
+      line-height: 2rem;
     }
   }
 }
