@@ -225,8 +225,16 @@ cssPath: "/css/page.css"
   });
 
   function resetSelection() {
-    const items = document.querySelectorAll(".selected");
-    items.forEach((item) => item.classList.remove("selected"));
+    desvio.classList.remove("selected");
+    amigdalectomia.classList.remove("selected");
+    fratura.classList.remove("selected");
+    tubinectomia.classList.remove("selected");
+    uvulo.classList.remove("selected");
+    uvulos.classList.remove("selected");
+    adenoidectomia.classList.remove("selected");
+    sinusite.classList.remove("selected");
+    adenoamigda.classList.remove("selected");
+    adenoamigdas.classList.remove("selected");
   }
 
   function updateSection() {
