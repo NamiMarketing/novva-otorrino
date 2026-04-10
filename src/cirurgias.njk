@@ -67,10 +67,13 @@ cssPath: "/css/page.css"
 <div class="selector">
   <button class="begeButton select selected upper" id="rinoplastia">Rinoplastia</button>
   <button class="begeButton select upper" id="otoplastia">Otoplastia</button>
+  <button class="begeButton select upper" id="lobuloplastia">Lobuloplastia</button>
   <button class="begeButton select upper" id="blefaroplastia">Blefaroplastia</button>
+  <button class="begeButton select upper desktop-only" id="lifting">Lifting de supercílios</button>
+  <button class="begeButton select upper mobile-only" id="liftingMob">Lifting de<br/> supercílios</button>
 </div>
 <section id="procedimento">
-  <div class="first" data-aos="fade-right">
+<div class="first" data-aos="fade-right">
     <h1>RINOPLASTIA</h1>
     <div class="top-right">
       <p>
@@ -85,7 +88,7 @@ cssPath: "/css/page.css"
       >
     </div>
     <img src="../img/pages/cirurgias/rinoplastia.png" alt="" />
-    <h2><span>BENEFÍCIOS DA RINOPLASTIA</span><br />COM O DR. LUCIANO</h2>
+    <h2>BENEFÍCIOS DA <span>RINOPLASTIA</span><br />COM O DR. LUCIANO</h2>
     <div class="bottom-right">
       <p>Anestesia local com sedação;</p>
       <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
@@ -440,10 +443,36 @@ cssPath: "/css/page.css"
     updateSection();
   });
 
+  const lobuloplastia = document.getElementById("lobuloplastia");
+  lobuloplastia.addEventListener("click", () => {
+    resetSelection();
+    selected = "lobulo";
+    lobuloplastia.classList.add("selected");
+    updateSection();
+  });
+
+  const lifting = document.getElementById("lifting");
+  lifting.addEventListener("click", () => {
+    resetSelection();
+    selected = "lifting";
+    lifting.classList.add("selected");
+    updateSection();
+  });
+
+  const liftingMob = document.getElementById("liftingMob");
+  liftingMob.addEventListener("click", () => {
+    resetSelection();
+    selected = "lifting";
+    liftingMob.classList.add("selected");
+    updateSection();
+  });
+
   function resetSelection() {
     rinoplastia.classList.remove("selected");
     otoplastia.classList.remove("selected");
     blefaroplastia.classList.remove("selected");
+    lobuloplastia.classList.remove("selected");
+    lifting.classList.remove("selected");
   }
 
   function updateSection() {
@@ -466,7 +495,7 @@ cssPath: "/css/page.css"
       >
     </div>
     <img src="../img/pages/cirurgias/rinoplastia.png" alt="" />
-    <h2><span>BENEFÍCIOS DA RINOPLASTIA</span><br />COM O DR. LUCIANO</h2>
+    <h2>BENEFÍCIOS DA <span>RINOPLASTIA</span><br />COM O DR. LUCIANO</h2>
     <div class="bottom-right">
       <p>Anestesia local com sedação;</p>
       <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
@@ -798,7 +827,7 @@ cssPath: "/css/page.css"
         <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton upper">Agendar Avaliação</a>
     </div>
     <img src="../img/pages/cirurgias/otoplastia.png" alt="">
-    <h2><span>BENEFÍCIOS DA OTOPLASTIA</span><br/>COM O DR. LUCIANO</h2>
+    <h2>BENEFÍCIOS DA <span>OTOPLASTIA</span><br/>COM O DR. LUCIANO</h2>
     <div class="bottom-right">
         <p>Anestesia local com sedação;</p>
         <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
@@ -1002,7 +1031,7 @@ cssPath: "/css/page.css"
         <a href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor." class="begeButton upper">Agendar Avaliação</a>
     </div>
     <img src="../img/pages/cirurgias/blefaroplastia.png" alt="">
-    <h2><span>BENEFÍCIOS DA BLEFAROPLASTIA</span><br/>COM O DR. LUCIANO</h2>
+    <h2>BENEFÍCIOS DA <span>BLEFAROPLASTIA</span><br/>COM O DR. LUCIANO</h2>
     <div class="bottom-right">
         <p>Anestesia local com sedação;</p>
         <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
@@ -1196,6 +1225,283 @@ cssPath: "/css/page.css"
   </div>
 </section>
             `;
+      break
+    case "lobulo":
+      section.innerHTML = `
+      <div class="first">
+    <h1>LOBULOPLASTIA</h1>
+    <div class="top-right">
+      <p>
+        A lobuloplastia corrige rasgos ou alargamentos no lóbulo da orelha, devolvendo seu formato natural, com resultado discreto e recuperação rápida.
+      </p>
+      <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton upper"
+        >Agendar Avaliação</a
+      >
+    </div>
+    <img src="../img/pages/cirurgias/lobuloplastia.png" alt="" />
+    <h2>BENEFÍCIOS DA <span>LOBULOPLASTIA</span><br />COM O DR. LUCIANO</h2>
+    <div class="bottom-right">
+      <p>Anestesia local com sedação;</p>
+      <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
+      <p>
+        Rápida recuperação, geralmente com pós-operatório indolor;
+      </p>
+      <p>Procedimento muito pouco invasivo;</p>
+      <p>Alta no mesmo dia.</p>
+    </div>
+  </div>
+  <div class="second">
+    <h2>DIFERENCIAIS <span>DR. LUCIANO</span></h2>
+    <div class="icones-2">
+      <div class="item">
+        <img src="../img/pages/cirurgias/foco.png" alt="" />
+        <p>Foco no resultado harmonioso e natural</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgias/medico.png" alt="" />
+        <p>Médico cirurgião com mais de 17 anos de experiência</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgias/consulta.png" alt="" />
+        <p>Consulta online e presencial</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgias/cirurgia.png" alt="" />
+        <p>Cirurgia combinada de otoplastia, blefaroplastia ou rinoplastia</p>
+      </div>
+    </div>
+    <a
+      href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+      class="begeButton upper"
+      >Agendar Avaliação</a
+    >
+  </div>
+  <div class="third">
+    <h2>QUANDO FAZER UMA <span>LOBULOPLASTIA?</span></h2>
+    <div class="wrap-quando">
+      <p>
+        Rasgo completo <br/>do lóbulo
+      </p>
+      <p>
+       Quando o brinco “pesa” <br/>e o furo fica alongado
+      </p>
+      <p>Deformidades ou <br/>assimetrias</p>
+      <p>Insatisfação estética</p>
+    </div>
+    <a
+      href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+      class="begeButton upper"
+      >Agendar Avaliação</a
+    >
+  </div>
+  <div class="fourth">
+    <div class="fourth-intro">
+      <h4>PASSO A PASSO</h4>
+      <h2>COMO FUNCIONA O <br /><span>PROCEDIMENTO?</span></h2>
+    </div>
+    <div class="wrap-fourth">
+      <div class="left">
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Primeira consulta online ou presencial</h5>
+          </div>
+          <p>
+            O Dr. Luciano te examinará e indicará o procedimento adequado para você.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Agendamento da cirurgia</h5>
+          </div>
+          <p>
+            O paciente deverá chegar com uma hora de antecedência na clínica e ficar 8 horas em jejum.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Procedimento</h5>
+          </div>
+          <p>
+            A cirurgia leva em torno de 60 minutos e a alta será no mesmo dia.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Recuperação</h5>
+          </div>
+          <p>
+            A cirurgia é pouco invasiva, e o paciente normalmente apresenta pouca dor. O pós é indolor e retiramos os pontos entre 7 e 14 dias.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Cuidados pós-cirúrgicos</h5>
+          </div>
+          <p>
+            Cumprir orientações de cuidado pós cirurgia e comparecer às
+            consultas.
+          </p>
+        </div>
+      </div>
+      <img
+        class="desktop-only"
+        src="../img/pages/cirurgias/lobuloplastia2.png"
+        alt=""
+      />
+      <img
+        class="mobile-only"
+        src="../img/pages/cirurgias/lobuloplastia2-mob.png"
+        alt=""
+      />
+    </div>
+  </div>
+
+      `
+      break
+    case "lifting":
+      section.innerHTML = `
+        <div class="first">
+    <h1 class="smaller">LIFTING DE SUPERCÍLIOS</h1>
+    <div class="top-right">
+      <p>
+        O lifting de supercílios reposiciona as sobrancelhas, corrigindo sua queda e devolvendo leveza ao olhar, com resultado natural.
+      </p>
+      <a
+        href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+        class="begeButton upper"
+        >Agendar Avaliação</a
+      >
+    </div>
+    <img src="../img/pages/cirurgias/lobuloplastia.png" alt="" />
+    <h2>BENEFÍCIOS DO<br/><span>LIFTING DE SUPERCÍLIOS</span><br />COM O DR. LUCIANO</h2>
+    <div class="bottom-right">
+      <p>Anestesia local com sedação;</p>
+      <p>Acompanhamento pós-operatório por seis meses (sem custo adicional);</p>
+      <p>
+        Rápida recuperação, geralmente com pós-operatório indolor;
+      </p>
+      <p>Procedimento muito pouco invasivo;</p>
+      <p>Alta no mesmo dia.</p>
+    </div>
+  </div>
+  <div class="second">
+    <h2>DIFERENCIAIS <span>DR. LUCIANO</span></h2>
+    <div class="icones-2">
+      <div class="item">
+        <img src="../img/pages/cirurgias/foco.png" alt="" />
+        <p>Foco no resultado harmonioso e natural</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgias/medico.png" alt="" />
+        <p>Médico cirurgião com mais de 17 anos de experiência</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgias/consulta.png" alt="" />
+        <p>Consulta online e presencial</p>
+      </div>
+      <div class="item">
+        <img src="../img/pages/cirurgias/cirurgia.png" alt="" />
+        <p>Cirurgia combinada de otoplastia, blefaroplastia ou rinoplastia</p>
+      </div>
+    </div>
+    <a
+      href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+      class="begeButton upper"
+      >Agendar Avaliação</a
+    >
+  </div>
+  <div class="third">
+    <h2>QUANDO FAZER UM <span>LIFTING DE SUPERCÍLIOS?</span></h2>
+    <div class="wrap-quando">
+      <p>
+        Olhos cansados <br/>(caídos)
+      </p>
+      <p>
+       Quando a expressão <br/>fica “brava” ou triste
+      </p>
+      <p>Quando há queda <br/>visível das sobrancelhas</p>
+      <p>Excesso de pele na <br/>pálpebra superior</p>
+    </div>
+    <a
+      href="https://wa.me/5541991151500?text=Ol%C3%A1,%20estava%20no%20site%20da%20Novva%20Otorrino%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es,%20por%20favor."
+      class="begeButton upper"
+      >Agendar Avaliação</a
+    >
+  </div>
+  <div class="fourth">
+    <div class="fourth-intro">
+      <h4>PASSO A PASSO</h4>
+      <h2>COMO FUNCIONA O <br /><span>PROCEDIMENTO?</span></h2>
+    </div>
+    <div class="wrap-fourth">
+      <div class="left">
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Primeira consulta online ou presencial</h5>
+          </div>
+          <p>
+            O Dr. Luciano te examinará e indicará o procedimento adequado para você.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Agendamento da cirurgia</h5>
+          </div>
+          <p>
+            O paciente deverá chegar com uma hora de antecedência na clínica e ficar 8 horas em jejum.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Procedimento</h5>
+          </div>
+          <p>
+            A cirurgia leva em torno de 60 minutos e a alta será no mesmo dia.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Recuperação</h5>
+          </div>
+          <p>
+            A cirurgia é pouco invasiva, e o paciente normalmente apresenta pouca dor. O pós é indolor e retiramos os pontos entre 7 e 14 dias.
+          </p>
+        </div>
+        <div class="item" >
+          <div class="bolinha">
+            <img src="../img/pages/bolinha.png" alt="" />
+            <h5>Cuidados pós-cirúrgicos</h5>
+          </div>
+          <p>
+            Cumprir orientações de cuidado pós cirurgia e comparecer às
+            consultas.
+          </p>
+        </div>
+      </div>
+      <img
+        class="desktop-only"
+        src="../img/pages/cirurgias/lifting2.png"
+        alt=""
+      />
+      <img
+        class="mobile-only"
+        src="../img/pages/cirurgias/lifting2-mob.png"
+        alt=""
+      />
+    </div>
+  </div>
+      `
       break
   }
   }
