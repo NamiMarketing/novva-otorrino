@@ -33,7 +33,11 @@ li {
   z-index: 10;
   bottom: 8rem;
   right: 4rem;
-  height: 10rem;
+  height: 9rem;
+  width: 9rem;
+  img{
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 701px){
