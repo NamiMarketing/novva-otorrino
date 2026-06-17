@@ -55,11 +55,21 @@ header{
     }
     .quem-right{
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 3.3rem;
         p{
             font-size: 2rem;
             font-weight: 400;
             color: $bege3;
             margin-top: 3rem;
+        }
+        a{
+            font-family: $nunito;
+            font-size: 1.6rem;
+            line-height: 100%;
+            letter-spacing: 5px;
+            padding: 1.6rem 4.5rem;
         }
     }
 }
@@ -415,11 +425,17 @@ header{
             }
         }
         .quem-right{
-            flex: 1;
+            gap: 2.5rem;
+            align-items: center;
             p{
                 font-size: 1.5rem;
                 margin-top: 3rem;
                 text-align: center;
+            }
+            a{
+                font-size: 1.4rem;
+                letter-spacing: 4px;
+                padding: 1.2rem 3.5rem;
             }
         }
     }
